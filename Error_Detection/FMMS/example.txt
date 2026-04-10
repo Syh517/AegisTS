@@ -1,0 +1,419 @@
+0
+########### data_name ts #############
+y_train.shape  (275, 24)
+ytest.shape  (69, 24)
+xtrain.shape  (275, 200)
+xtest.shape  (69, 200)
+xtrain dimensions: (220, 200)
+ytrain dimensions: (220, 24)
+xvalid dimensions: (55, 200)
+yvalid dimensions: (55, 24)
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.26590909090909093
+Topnk_: 214/220
+AvgRank_: 0.3704545454545454
+Topnk_: 53/55
+AvgRank_: 0.28502415458937197
+Topnk_: 67/69
+epoch: 0 loss_train: 0.1305361158597351 loss_test 0.15477824495336873
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.2700757575757576
+Topnk_: 214/220
+AvgRank_: 0.35075757575757577
+Topnk_: 53/55
+AvgRank_: 0.2995169082125604
+Topnk_: 67/69
+epoch: 1 loss_train: 0.12584176895621837 loss_test 0.1514131908583134
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.26515151515151514
+Topnk_: 214/220
+AvgRank_: 0.33560606060606063
+Topnk_: 53/55
+AvgRank_: 0.29347826086956524
+Topnk_: 68/69
+epoch: 2 loss_train: 0.12284430575111817 loss_test 0.14890850044550089
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.25018939393939393
+Topnk_: 215/220
+AvgRank_: 0.3189393939393939
+Topnk_: 53/55
+AvgRank_: 0.26207729468599034
+Topnk_: 68/69
+epoch: 3 loss_train: 0.12058229342154374 loss_test 0.14726780615018656
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.2477272727272727
+Topnk_: 215/220
+AvgRank_: 0.3053030303030303
+Topnk_: 54/55
+AvgRank_: 0.2548309178743961
+Topnk_: 68/69
+epoch: 4 loss_train: 0.11872386025031957 loss_test 0.14599715624484372
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.2196969696969697
+Topnk_: 216/220
+AvgRank_: 0.2606060606060606
+Topnk_: 54/55
+AvgRank_: 0.2554347826086956
+Topnk_: 68/69
+epoch: 5 loss_train: 0.11709619679489264 loss_test 0.1449450709624451
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.2056818181818182
+Topnk_: 216/220
+AvgRank_: 0.2628787878787879
+Topnk_: 54/55
+AvgRank_: 0.2524154589371981
+Topnk_: 68/69
+epoch: 6 loss_train: 0.11561490411873461 loss_test 0.14405446136503225
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.20075757575757577
+Topnk_: 216/220
+AvgRank_: 0.2545454545454546
+Topnk_: 54/55
+AvgRank_: 0.2536231884057971
+Topnk_: 68/69
+epoch: 7 loss_train: 0.11423574223897671 loss_test 0.14328033516469207
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.19924242424242425
+Topnk_: 216/220
+AvgRank_: 0.23863636363636365
+Topnk_: 53/55
+AvgRank_: 0.2530193236714976
+Topnk_: 68/69
+epoch: 8 loss_train: 0.11293334750046802 loss_test 0.14259798881925823
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.19999999999999998
+Topnk_: 216/220
+AvgRank_: 0.2340909090909091
+Topnk_: 53/55
+AvgRank_: 0.26811594202898553
+Topnk_: 68/69
+epoch: 9 loss_train: 0.11169250098141432 loss_test 0.14199116400030068
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.2115530303030303
+Topnk_: 216/220
+AvgRank_: 0.27424242424242423
+Topnk_: 53/55
+AvgRank_: 0.2632850241545894
+Topnk_: 68/69
+epoch: 10 loss_train: 0.11050355289491548 loss_test 0.14144824505026404
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.21458333333333335
+Topnk_: 215/220
+AvgRank_: 0.2924242424242424
+Topnk_: 53/55
+AvgRank_: 0.267512077294686
+Topnk_: 68/69
+epoch: 11 loss_train: 0.10936000780408187 loss_test 0.14096062313031016
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.21477272727272725
+Topnk_: 216/220
+AvgRank_: 0.2825757575757576
+Topnk_: 53/55
+AvgRank_: 0.2717391304347826
+Topnk_: 68/69
+epoch: 12 loss_train: 0.10825722948548482 loss_test 0.14052163235711262
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.2196969696969697
+Topnk_: 216/220
+AvgRank_: 0.29545454545454547
+Topnk_: 55/55
+AvgRank_: 0.27294685990338163
+Topnk_: 68/69
+epoch: 13 loss_train: 0.10719175482058707 loss_test 0.14012592594109602
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.22575757575757574
+Topnk_: 216/220
+AvgRank_: 0.29318181818181815
+Topnk_: 55/55
+AvgRank_: 0.266304347826087
+Topnk_: 68/69
+epoch: 14 loss_train: 0.10616087770441157 loss_test 0.1397691808938132
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.22992424242424245
+Topnk_: 216/220
+AvgRank_: 0.29318181818181815
+Topnk_: 55/55
+AvgRank_: 0.266304347826087
+Topnk_: 68/69
+epoch: 15 loss_train: 0.10516238746417667 loss_test 0.13944783260594878
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.22992424242424245
+Topnk_: 216/220
+AvgRank_: 0.3068181818181818
+Topnk_: 55/55
+AvgRank_: 0.2699275362318841
+Topnk_: 68/69
+epoch: 16 loss_train: 0.10419441430849882 loss_test 0.13915894334086182
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.22556818181818183
+Topnk_: 216/220
+AvgRank_: 0.3068181818181818
+Topnk_: 55/55
+AvgRank_: 0.2699275362318841
+Topnk_: 68/69
+epoch: 17 loss_train: 0.10325534113398994 loss_test 0.13890007017478645
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.2274621212121212
+Topnk_: 216/220
+AvgRank_: 0.3068181818181818
+Topnk_: 55/55
+AvgRank_: 0.26932367149758457
+Topnk_: 68/69
+epoch: 18 loss_train: 0.10234372154948518 loss_test 0.13866917098431872
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.22424242424242424
+Topnk_: 216/220
+AvgRank_: 0.3068181818181818
+Topnk_: 55/55
+AvgRank_: 0.26932367149758457
+Topnk_: 67/69
+epoch: 19 loss_train: 0.10145823462728328 loss_test 0.13846454017743515
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.22386363636363638
+Topnk_: 216/220
+AvgRank_: 0.3068181818181818
+Topnk_: 55/55
+AvgRank_: 0.2608695652173913
+Topnk_: 68/69
+epoch: 20 loss_train: 0.10059767175350746 loss_test 0.13828472717695903
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.22215909090909092
+Topnk_: 216/220
+AvgRank_: 0.3068181818181818
+Topnk_: 54/55
+AvgRank_: 0.2608695652173913
+Topnk_: 68/69
+epoch: 21 loss_train: 0.09976088151314072 loss_test 0.1381284972450706
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.21837121212121213
+Topnk_: 216/220
+AvgRank_: 0.3068181818181818
+Topnk_: 54/55
+AvgRank_: 0.2602657004830918
+Topnk_: 68/69
+epoch: 22 loss_train: 0.09894681054160939 loss_test 0.13799479608427972
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.2164772727272727
+Topnk_: 216/220
+AvgRank_: 0.3068181818181818
+Topnk_: 55/55
+AvgRank_: 0.2602657004830918
+Topnk_: 68/69
+epoch: 23 loss_train: 0.09815445209930383 loss_test 0.13788266982858008
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.21931818181818183
+Topnk_: 216/220
+AvgRank_: 0.3068181818181818
+Topnk_: 55/55
+AvgRank_: 0.2602657004830918
+Topnk_: 67/69
+epoch: 24 loss_train: 0.09738284938354315 loss_test 0.13779127770448815
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.21893939393939396
+Topnk_: 217/220
+AvgRank_: 0.3106060606060606
+Topnk_: 55/55
+AvgRank_: 0.2602657004830918
+Topnk_: 67/69
+epoch: 25 loss_train: 0.09663111355392077 loss_test 0.13771982385092774
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.21609848484848485
+Topnk_: 217/220
+AvgRank_: 0.31666666666666665
+Topnk_: 55/55
+AvgRank_: 0.2602657004830918
+Topnk_: 67/69
+epoch: 26 loss_train: 0.09589840194673585 loss_test 0.1376675705539423
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.21571969696969698
+Topnk_: 217/220
+AvgRank_: 0.31666666666666665
+Topnk_: 55/55
+AvgRank_: 0.2524154589371981
+Topnk_: 67/69
+epoch: 27 loss_train: 0.09518392304571043 loss_test 0.13763377895723838
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.21477272727272725
+Topnk_: 217/220
+AvgRank_: 0.31666666666666665
+Topnk_: 55/55
+AvgRank_: 0.2524154589371981
+Topnk_: 67/69
+epoch: 28 loss_train: 0.09448694188794202 loss_test 0.13761773942544903
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.21401515151515152
+Topnk_: 218/220
+AvgRank_: 0.31666666666666665
+Topnk_: 55/55
+AvgRank_: 0.2524154589371981
+Topnk_: 67/69
+epoch: 29 loss_train: 0.09380677552200589 loss_test 0.13761870117807543
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.2159090909090909
+Topnk_: 218/220
+AvgRank_: 0.31666666666666665
+Topnk_: 55/55
+AvgRank_: 0.2524154589371981
+Topnk_: 67/69
+epoch: 30 loss_train: 0.09314277343246526 loss_test 0.13763594362766135
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.21344696969696972
+Topnk_: 218/220
+AvgRank_: 0.325
+Topnk_: 55/55
+AvgRank_: 0.24939613526570048
+Topnk_: 67/69
+epoch: 31 loss_train: 0.09249436016596375 loss_test 0.13766870969402492
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.21344696969696972
+Topnk_: 218/220
+AvgRank_: 0.325
+Topnk_: 55/55
+AvgRank_: 0.24939613526570048
+Topnk_: 67/69
+epoch: 32 loss_train: 0.09186098614200543 loss_test 0.13771623645370715
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.21117424242424243
+Topnk_: 218/220
+AvgRank_: 0.3242424242424243
+Topnk_: 55/55
+AvgRank_: 0.25120772946859904
+Topnk_: 67/69
+epoch: 33 loss_train: 0.09124215536022483 loss_test 0.13777774962029882
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.20132575757575757
+Topnk_: 218/220
+AvgRank_: 0.3242424242424243
+Topnk_: 55/55
+AvgRank_: 0.25120772946859904
+Topnk_: 67/69
+epoch: 34 loss_train: 0.09063741262120402 loss_test 0.1378524686998614
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.19999999999999998
+Topnk_: 217/220
+AvgRank_: 0.3242424242424243
+Topnk_: 55/55
+AvgRank_: 0.25120772946859904
+Topnk_: 67/69
+epoch: 35 loss_train: 0.09004633483285186 loss_test 0.13793959281394325
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.19299242424242424
+Topnk_: 217/220
+AvgRank_: 0.31212121212121213
+Topnk_: 55/55
+AvgRank_: 0.24456521739130435
+Topnk_: 67/69
+epoch: 36 loss_train: 0.08946854781976174 loss_test 0.13803834321290562
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.19299242424242424
+Topnk_: 217/220
+AvgRank_: 0.31212121212121213
+Topnk_: 55/55
+AvgRank_: 0.24456521739130435
+Topnk_: 67/69
+epoch: 37 loss_train: 0.08890369887545155 loss_test 0.1381479322615168
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.19128787878787878
+Topnk_: 217/220
+AvgRank_: 0.31212121212121213
+Topnk_: 55/55
+AvgRank_: 0.24456521739130435
+Topnk_: 67/69
+epoch: 38 loss_train: 0.08835147157740589 loss_test 0.13826756816129987
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.1890151515151515
+Topnk_: 217/220
+AvgRank_: 0.31212121212121213
+Topnk_: 55/55
+AvgRank_: 0.2433574879227053
+Topnk_: 67/69
+epoch: 39 loss_train: 0.08781156076630692 loss_test 0.13839648030730572
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.1890151515151515
+Topnk_: 217/220
+AvgRank_: 0.30454545454545456
+Topnk_: 55/55
+AvgRank_: 0.2397342995169082
+Topnk_: 67/69
+epoch: 40 loss_train: 0.08728369117058471 loss_test 0.1385338761193308
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.1865530303030303
+Topnk_: 217/220
+AvgRank_: 0.31666666666666665
+Topnk_: 55/55
+AvgRank_: 0.2397342995169082
+Topnk_: 67/69
+epoch: 41 loss_train: 0.0867676003265666 loss_test 0.1386789993269738
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.1865530303030303
+Topnk_: 217/220
+AvgRank_: 0.3159090909090909
+Topnk_: 55/55
+AvgRank_: 0.2397342995169082
+Topnk_: 67/69
+epoch: 42 loss_train: 0.08626303476687765 loss_test 0.13883108201112662
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.1831439393939394
+Topnk_: 217/220
+AvgRank_: 0.3159090909090909
+Topnk_: 55/55
+AvgRank_: 0.2397342995169082
+Topnk_: 67/69
+epoch: 43 loss_train: 0.08576975175086828 loss_test 0.13898936210258123
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.18295454545454545
+Topnk_: 217/220
+AvgRank_: 0.3037878787878788
+Topnk_: 55/55
+AvgRank_: 0.2397342995169082
+Topnk_: 67/69
+epoch: 44 loss_train: 0.0852875024348801 loss_test 0.13915310075459855
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.1846590909090909
+Topnk_: 217/220
+AvgRank_: 0.3037878787878788
+Topnk_: 55/55
+AvgRank_: 0.2397342995169082
+Topnk_: 67/69
+epoch: 45 loss_train: 0.08481605506780447 loss_test 0.13932156022026287
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.1831439393939394
+Topnk_: 217/220
+AvgRank_: 0.3037878787878788
+Topnk_: 55/55
+AvgRank_: 0.2397342995169082
+Topnk_: 67/69
+epoch: 46 loss_train: 0.0843551661808346 loss_test 0.13949401954112803
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.18333333333333335
+Topnk_: 217/220
+AvgRank_: 0.3037878787878788
+Topnk_: 55/55
+AvgRank_: 0.24879227053140096
+Topnk_: 67/69
+epoch: 47 loss_train: 0.08390460304590516 loss_test 0.13966978838649416
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.18712121212121213
+Topnk_: 217/220
+AvgRank_: 0.3037878787878788
+Topnk_: 55/55
+AvgRank_: 0.2457729468599034
+Topnk_: 67/69
+epoch: 48 loss_train: 0.0834641154479346 loss_test 0.13984818422855813
+ytrainpred.shape  torch.Size([220, 24])
+AvgRank_: 0.18958333333333333
+Topnk_: 217/220
+AvgRank_: 0.2878787878787879
+Topnk_: 55/55
+AvgRank_: 0.2457729468599034
+Topnk_: 67/69
+epoch: 49 loss_train: 0.08303346482055173 loss_test 0.14002855545459145
+txt is  0
+adam_cos_4_8_50_0.005
+test_loss tensor(0.1400, dtype=torch.float64, grad_fn=<DivBackward0>)
+ypred.shape  (69, 24)
+ytest.shape  (69, 24)
+['Dataset', 'ALLM4TS', 'AnomalyTransformer', 'AutoEncoder', 'CBLOF', 'CNN', 'COPOD', 'Donut', 'EIF', 'FITS', 'HBOS', 'IForest', 'KMeansAD', 'KNN', 'LOF', 'LSTMAD', 'MCD', 'OCSVM', 'OFA', 'OmniAnomaly', 'PCA', 'RobustPCA', 'TimesNet', 'TranAD', 'USAD']
+ypred saved to 'FMMS_ypred_0_ts_val.csv'
+AvgRank_FMMS: 0.2457729468599034
+Topnk_FMMS: 67/69

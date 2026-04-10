@@ -1,0 +1,6 @@
+setup.py
+AutoClean.egg-info/PKG-INFO
+AutoClean.egg-info/SOURCES.txt
+AutoClean.egg-info/dependency_links.txt
+AutoClean.egg-info/requires.txt
+AutoClean.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+########### data_name ts #############
+adam_cos_4_8_50_0.005
+ypred.shape  (344, 24)
+['Dataset', 'ALLM4TS', 'AnomalyTransformer', 'AutoEncoder', 'CBLOF', 'CNN', 'COPOD', 'Donut', 'EIF', 'FITS', 'HBOS', 'IForest', 'KMeansAD', 'KNN', 'LOF', 'LSTMAD', 'MCD', 'OCSVM', 'OFA', 'OmniAnomaly', 'PCA', 'RobustPCA', 'TimesNet', 'TranAD', 'USAD']
+ypred saved to 'FMMS_ypred_0_ts_test.csv'

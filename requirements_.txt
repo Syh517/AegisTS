@@ -1,0 +1,47 @@
+numpy
+pandas
+matplotlib
+pykalman
+scikit-learn
+troch
+ts2vec
+hdbscan
+prts
+statsmodels
+hurst
+tqdm
+torchinfo
+arch
+numba
+transformers
+einops
+stumpy
+tslearn
+autogluon
+# momentfm
+gluonts
+lag_llama
+# timesfm
+pyod
+joblib
+liac-arff
+gymnasium
+stable_baselines3
+scipy
+hmmlearn
+shapely
+tensorflow
+PyWavelets
+filterpy
+gurobipy
+geatpy
+deap
+prophet
+sktime
+aeon
+darts
+tsfresh
+pulp
+pygad
+pyomo
+# conda install -c conda-forge ipopt

@@ -1,0 +1,12 @@
+Total features time: 2 seconds
+Total features time: 1 seconds
+Total features time: 1 seconds
+Total features time: 21 seconds
+Total features time: 20 seconds
+Total features time: 21 seconds
+Total features time: 21 seconds
+Total features time: 20 seconds
+Total features time: 21 seconds
+Total features time: 20 seconds
+Total features time: 48 seconds
+Total features time: 633 seconds

@@ -1,0 +1,6 @@
+Train time : 3 seconds
+Eval time : 2 seconds
+Train time : 1 seconds
+Eval time : 2 seconds
+Train time : 6 seconds
+Eval time : 2 seconds

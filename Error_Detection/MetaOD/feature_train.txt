@@ -1,0 +1,4233 @@
+          Dataset   ALLM4TS  AnomalyTransformer  ...  TimesNet    TranAD     USAD
+0  CalIt2_traffic  0.307555            0.212146  ...  0.283305  0.501269  0.59534
+
+[1 rows x 25 columns]
+(344, 25)
+roc_mat_red  (343, 24)
+n_datasets, n_configs  343 24
+data_headers 
+['CalIt2_traffic' 'Daphnet_S01R01E1' 'Daphnet_S02R01E0' 'Daphnet_S02R02E0'
+ 'Daphnet_S03R01E0' 'Daphnet_S03R01E1' 'Daphnet_S03R02E0'
+ 'Daphnet_S05R01E0' 'Daphnet_S05R01E1' 'Daphnet_S05R01E2'
+ 'Daphnet_S05R01E3' 'Daphnet_S05R02E0' 'Daphnet_S05R02E1'
+ 'Daphnet_S06R01E0' 'Daphnet_S06R01E1' 'Daphnet_S06R01E2'
+ 'Daphnet_S07R01E0' 'Daphnet_S07R02E0' 'Daphnet_S08R01E0'
+ 'Daphnet_S08R01E1' 'Daphnet_S08R01E2' 'Daphnet_S08R01E3'
+ 'Daphnet_S09R01E0' 'Daphnet_S09R01E1' 'Daphnet_S09R01E2'
+ 'Daphnet_S09R01E3' 'Daphnet_S09R01E4' 'Exathlon_10_2_1000000_67'
+ 'Exathlon_10_3_1000000_75' 'Exathlon_10_4_1000000_79'
+ 'Exathlon_1_2_100000_68' 'Exathlon_1_4_1000000_80'
+ 'Exathlon_1_5_1000000_86' 'Exathlon_2_1_100000_60'
+ 'Exathlon_2_2_200000_69' 'Exathlon_2_5_1000000_87'
+ 'Exathlon_2_5_1000000_88' 'Exathlon_3_2_500000_70'
+ 'Exathlon_3_4_1000000_81' 'Exathlon_3_5_1000000_89'
+ 'Exathlon_4_1_100000_61' 'Exathlon_4_5_1000000_90'
+ 'Exathlon_5_1_100000_63' 'Exathlon_5_1_100000_64'
+ 'Exathlon_5_1_500000_62' 'Exathlon_5_2_1000000_72'
+ 'Exathlon_5_4_1000000_82' 'Exathlon_5_5_1000000_91'
+ 'Exathlon_6_1_500000_65' 'Exathlon_6_3_200000_76'
+ 'Exathlon_8_3_200000_73' 'Exathlon_8_4_1000000_77'
+ 'Exathlon_8_5_1000000_83' 'Exathlon_9_2_1000000_66'
+ 'Exathlon_9_3_500000_74' 'Exathlon_9_4_1000000_78'
+ 'Exathlon_9_5_1000000_84' 'GECCO_water_quality'
+ 'GHL_17_Lev_fault_Temp_corr_seed_57_vars_23'
+ 'GHL_18_Lev_fault_Temp_corr_seed_59_vars_23'
+ 'GHL_19_Lev_fault_Temp_corr_seed_62_vars_23'
+ 'GHL_20_Lev_fault_Temp_corr_seed_67_vars_23'
+ 'GHL_21_Lev_fault_Temp_corr_seed_73_vars_23'
+ 'GHL_22_Lev_fault_Temp_corr_seed_777_vars_23'
+ 'GHL_24_Lev_fault_Temp_corr_seed_83_vars_23'
+ 'GHL_41_Lev_corr_Temp_fault_seed_181_vars_23'
+ 'GHL_43_Lev_corr_Temp_fault_seed_189_vars_23'
+ 'GHL_44_Lev_corr_Temp_fault_seed_190_vars_23'
+ 'GHL_45_Lev_corr_Temp_fault_seed_193_vars_23'
+ 'GHL_46_Lev_corr_Temp_fault_seed_194_vars_23'
+ 'GHL_47_Lev_corr_Temp_fault_seed_197_vars_23'
+ 'GHL_48_Lev_corr_Temp_fault_seed_199_vars_23' 'Genesis' 'GutenTAG_0'
+ 'GutenTAG_10' 'GutenTAG_11' 'GutenTAG_12' 'GutenTAG_13' 'GutenTAG_14'
+ 'GutenTAG_15' 'GutenTAG_16' 'GutenTAG_17' 'GutenTAG_18' 'GutenTAG_19'
+ 'GutenTAG_1' 'GutenTAG_20' 'GutenTAG_21' 'GutenTAG_22' 'GutenTAG_23'
+ 'GutenTAG_24' 'GutenTAG_25' 'GutenTAG_26' 'GutenTAG_27' 'GutenTAG_28'
+ 'GutenTAG_29' 'GutenTAG_2' 'GutenTAG_3' 'GutenTAG_4' 'GutenTAG_5'
+ 'GutenTAG_6' 'GutenTAG_7' 'GutenTAG_8' 'GutenTAG_9' 'MITDB_100'
+ 'MITDB_101' 'MITDB_102' 'MITDB_103' 'MITDB_104' 'MITDB_105' 'MITDB_106'
+ 'MITDB_107' 'MITDB_108' 'MITDB_109' 'MITDB_111' 'MITDB_112' 'MITDB_113'
+ 'MITDB_114' 'MITDB_115' 'MITDB_116' 'MITDB_117' 'MITDB_118' 'MITDB_119'
+ 'MITDB_121' 'MITDB_122' 'MITDB_123' 'MITDB_124' 'MITDB_200' 'MITDB_201'
+ 'MITDB_202' 'MITDB_203' 'MITDB_205' 'MITDB_207' 'MITDB_208' 'MITDB_209'
+ 'MITDB_210' 'MITDB_212' 'MITDB_213' 'MITDB_214' 'MITDB_215' 'MITDB_217'
+ 'MITDB_219' 'MITDB_220' 'MITDB_221' 'MITDB_222' 'MITDB_223' 'MITDB_228'
+ 'MITDB_230' 'MITDB_232' 'MITDB_233' 'MITDB_234' 'MSL_C-1' 'MSL_C-2'
+ 'MSL_D-14' 'MSL_D-15' 'MSL_D-16' 'MSL_F-4' 'MSL_F-5' 'MSL_F-7' 'MSL_F-8'
+ 'MSL_M-1' 'MSL_M-2' 'MSL_M-3' 'MSL_M-4' 'MSL_M-5' 'MSL_M-6' 'MSL_M-7'
+ 'MSL_P-10' 'MSL_P-11' 'MSL_P-14' 'MSL_P-15' 'MSL_S-2' 'MSL_T-12'
+ 'MSL_T-13' 'MSL_T-4' 'MSL_T-5' 'MSL_T-8' 'OPPORTUNITY_S1-ADL2'
+ 'OPPORTUNITY_S1-ADL3' 'OPPORTUNITY_S1-ADL4' 'OPPORTUNITY_S1-ADL5'
+ 'OPPORTUNITY_S2-ADL1' 'OPPORTUNITY_S2-ADL2' 'OPPORTUNITY_S3-ADL3'
+ 'OPPORTUNITY_S3-ADL4' 'OPPORTUNITY_S3-ADL5' 'OPPORTUNITY_S4-ADL2'
+ 'OPPORTUNITY_S4-ADL3' 'OPPORTUNITY_S4-ADL4' 'OPPORTUNITY_S4-ADL5' 'PSM'
+ 'SMAP_A-1' 'SMAP_A-2' 'SMAP_A-3' 'SMAP_A-4' 'SMAP_A-5' 'SMAP_A-6'
+ 'SMAP_A-8' 'SMAP_A-9' 'SMAP_B-1' 'SMAP_D-11' 'SMAP_D-1' 'SMAP_D-2'
+ 'SMAP_D-3' 'SMAP_D-4' 'SMAP_D-5' 'SMAP_D-6' 'SMAP_D-7' 'SMAP_D-8'
+ 'SMAP_D-9' 'SMAP_E-10' 'SMAP_E-11' 'SMAP_E-12' 'SMAP_E-13' 'SMAP_E-1'
+ 'SMAP_E-2' 'SMAP_E-3' 'SMAP_E-4' 'SMAP_E-5' 'SMAP_E-6' 'SMAP_E-7'
+ 'SMAP_E-8' 'SMAP_E-9' 'SMAP_F-1' 'SMAP_F-2' 'SMAP_F-3' 'SMAP_G-1'
+ 'SMAP_G-2' 'SMAP_G-3' 'SMAP_G-6' 'SMAP_G-7' 'SMAP_P-1' 'SMAP_P-2'
+ 'SMAP_P-3' 'SMAP_P-4' 'SMAP_S-1' 'SMAP_T-1' 'SMAP_T-2' 'SMAP_T-3'
+ 'SMD_machine-1-2' 'SMD_machine-1-3' 'SMD_machine-1-4' 'SMD_machine-1-6'
+ 'SMD_machine-1-7' 'SMD_machine-1-8' 'SMD_machine-2-1' 'SMD_machine-2-2'
+ 'SMD_machine-2-3' 'SMD_machine-2-4' 'SMD_machine-2-5' 'SMD_machine-2-7'
+ 'SMD_machine-2-9' 'SMD_machine-3-10' 'SMD_machine-3-2' 'SMD_machine-3-3'
+ 'SMD_machine-3-5' 'SMD_machine-3-6' 'SVDB_800' 'SVDB_801' 'SVDB_802'
+ 'SVDB_803' 'SVDB_804' 'SVDB_805' 'SVDB_806' 'SVDB_807' 'SVDB_808'
+ 'SVDB_809' 'SVDB_810' 'SVDB_811' 'SVDB_812' 'SVDB_820' 'SVDB_821'
+ 'SVDB_822' 'SVDB_823' 'SVDB_824' 'SVDB_825' 'SVDB_826' 'SVDB_827'
+ 'SVDB_828' 'SVDB_829' 'SVDB_840' 'SVDB_841' 'SVDB_842' 'SVDB_843'
+ 'SVDB_844' 'SVDB_845' 'SVDB_846' 'SVDB_847' 'SVDB_848' 'SVDB_849'
+ 'SVDB_850' 'SVDB_851' 'SVDB_852' 'SVDB_853' 'SVDB_854' 'SVDB_855'
+ 'SVDB_856' 'SVDB_857' 'SVDB_858' 'SVDB_859' 'SVDB_860' 'SVDB_861'
+ 'SVDB_862' 'SVDB_863' 'SVDB_864' 'SVDB_865' 'SVDB_866' 'SVDB_867'
+ 'SVDB_868' 'SVDB_869' 'SVDB_870' 'SVDB_871' 'SVDB_872' 'SVDB_873'
+ 'SVDB_874' 'SVDB_875' 'SVDB_876' 'SVDB_877' 'SVDB_878' 'SVDB_879'
+ 'SVDB_880' 'SVDB_881' 'SVDB_882' 'SVDB_883' 'SVDB_884' 'SVDB_885'
+ 'SVDB_886' 'SVDB_887' 'SVDB_888' 'SVDB_889' 'SVDB_890' 'SVDB_891'
+ 'SVDB_892' 'SVDB_893' 'SVDB_894' 'cicids_2' 'cicids_3' 'cicids_5'
+ 'cicids_6' 'cicids_7' 'creditcard' 'metro_traffic-volume'
+ 'room-occupancy_1' 'room-occupancy' 'swan_sf']
+len(data_headers)  344
+config_headers  Index(['ALLM4TS', 'AnomalyTransformer', 'AutoEncoder', 'CBLOF', 'CNN', 'COPOD',
+       'Donut', 'EIF', 'FITS', 'HBOS', 'IForest', 'KMeansAD', 'KNN', 'LOF',
+       'LSTMAD', 'MCD', 'OCSVM', 'OFA', 'OmniAnomaly', 'PCA', 'RobustPCA',
+       'TimesNet', 'TranAD', 'USAD'],
+      dtype='object')
+(940, 2)
+Sample Mean: 0.05797131147540984
+Sample Median: 0.0
+Sample Variance: 0.011065435583047912
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.10519237416774997
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+0 CalIt2_traffic
+(13796, 9)
+Sample Mean: 0.4515937415935768
+Sample Median: 0.46926006528835695
+Sample Variance: 0.015678187068667637
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.12521256753484308
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+1 Daphnet_S01R01E1
+(5120, 9)
+Sample Mean: 0.4595381761843063
+Sample Median: 0.4640957446808511
+Sample Variance: 0.019779884540858796
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.14064097745983847
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+2 Daphnet_S02R01E0
+(12182, 9)
+Sample Mean: 0.45451820562429934
+Sample Median: 0.4865987538324597
+Sample Variance: 0.026782997596199804
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1636551178429804
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+3 Daphnet_S02R02E0
+(9281, 9)
+Sample Mean: 0.5156838819481654
+Sample Median: 0.5312423425630973
+Sample Variance: 0.00646326533697354
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.08039443598268191
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+4 Daphnet_S03R01E0
+(4533, 9)
+Sample Mean: 0.4611153963477551
+Sample Median: 0.4732091690544412
+Sample Variance: 0.011644896882668914
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.10791152340074212
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+5 Daphnet_S03R01E1
+(3328, 9)
+Sample Mean: 0.4216914246352073
+Sample Median: 0.43170103092783507
+Sample Variance: 0.015197869133306858
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1232796379509076
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+6 Daphnet_S03R02E0
+(3788, 9)
+Sample Mean: 0.46217910345111224
+Sample Median: 0.44982029306054744
+Sample Variance: 0.01603028382826515
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.12661075715856512
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+7 Daphnet_S05R01E0
+(2099, 9)
+Sample Mean: 0.4413449215322474
+Sample Median: 0.452082565425728
+Sample Variance: 0.020037296780291893
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.14155315884957104
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+8 Daphnet_S05R01E1
+(1940, 9)
+Sample Mean: 0.4994624079431365
+Sample Median: 0.5463414634146342
+Sample Variance: 0.025253233672688287
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.15891266051730518
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+9 Daphnet_S05R01E2
+(1088, 9)
+Sample Mean: 0.4634001311168405
+Sample Median: 0.4369747899159664
+Sample Variance: 0.03896417302342738
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.19739344726567642
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+10 Daphnet_S05R01E3
+(6726, 9)
+Sample Mean: 0.505255303916666
+Sample Median: 0.4846513519007928
+Sample Variance: 0.020846190852503048
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.14438210018039996
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+11 Daphnet_S05R02E0
+(6016, 9)
+Sample Mean: 0.49870556368407515
+Sample Median: 0.4999999999999991
+Sample Variance: 0.033657780893322234
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1834605704049844
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+12 Daphnet_S05R02E1
+(10240, 9)
+Sample Mean: 0.4668542880330127
+Sample Median: 0.4961776483436476
+Sample Variance: 0.021984795000757007
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.14827270484063143
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+13 Daphnet_S06R01E0
+(6144, 9)
+Sample Mean: 0.47476101357868045
+Sample Median: 0.4806054872280038
+Sample Variance: 0.02468729295982944
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1571219047740621
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+14 Daphnet_S06R01E1
+(5120, 9)
+Sample Mean: 0.4060354549080474
+Sample Median: 0.4505494505494505
+Sample Variance: 0.06290805469379113
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.25081478164931015
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+15 Daphnet_S06R01E2
+(14223, 9)
+Sample Mean: 0.47421921292866054
+Sample Median: 0.49638205499276417
+Sample Variance: 0.019835085096947192
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.14083708707917525
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+16 Daphnet_S07R01E0
+(5760, 9)
+Sample Mean: 0.48391057628124234
+Sample Median: 0.5141879653853895
+Sample Variance: 0.023635880889581892
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1537396529512861
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+17 Daphnet_S07R02E0
+(2944, 9)
+Sample Mean: 0.44513821647610213
+Sample Median: 0.42914979757085026
+Sample Variance: 0.027013059312012862
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.16435650066855542
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+18 Daphnet_S08R01E0
+(1340, 9)
+Sample Mean: 0.4469931811533785
+Sample Median: 0.44899598393574297
+Sample Variance: 0.0173420549638952
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1316892363251272
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+19 Daphnet_S08R01E1
+(2688, 9)
+Sample Mean: 0.4748090840064001
+Sample Median: 0.44520030234315955
+Sample Variance: 0.018840000203592736
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.13725888023582566
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+20 Daphnet_S08R01E2
+(1499, 9)
+Sample Mean: 0.4535886170563736
+Sample Median: 0.4647026125625347
+Sample Variance: 0.01667949232807065
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.12914910889383113
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+21 Daphnet_S08R01E3
+(1920, 9)
+Sample Mean: 0.4891190997651465
+Sample Median: 0.49125874125874125
+Sample Variance: 0.030519539394838677
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.17469842413381603
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+22 Daphnet_S09R01E0
+(1363, 9)
+Sample Mean: 0.4349687497982039
+Sample Median: 0.4068801897983393
+Sample Variance: 0.019150568975664594
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1383855808083508
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+23 Daphnet_S09R01E1
+(3592, 9)
+Sample Mean: 0.453916486130242
+Sample Median: 0.43878954607977994
+Sample Variance: 0.017065600646243486
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.13063537287520363
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+24 Daphnet_S09R01E2
+(8915, 9)
+Sample Mean: 0.4591083280404135
+Sample Median: 0.4377358490566038
+Sample Variance: 0.016792938555234192
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.12958757099056295
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+25 Daphnet_S09R01E3
+(1920, 9)
+Sample Mean: 0.4722840152079906
+Sample Median: 0.45618247298919556
+Sample Variance: 0.02581448259283543
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.16066886005955053
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+26 Daphnet_S09R01E4
+(2050, 20)
+Sample Mean: 0.4379995614609777
+Sample Median: 0.07640473284872895
+Sample Variance: 0.21211138171173555
+Sample Min: 0.0
+Sample Max: 1.0000000000000018
+Sample Standard Deviation: 0.4605555142561378
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+27 Exathlon_10_2_1000000_67
+(9331, 20)
+Sample Mean: 0.09109240990044358
+Sample Median: 0.005203518276411943
+Sample Variance: 0.0368815395837483
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.19204567056757177
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+28 Exathlon_10_3_1000000_75
+(7319, 20)
+Sample Mean: 0.774172467723915
+Sample Median: 0.9259259259259259
+Sample Variance: 0.09823035141882731
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.3134172162131929
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+29 Exathlon_10_4_1000000_79
+(587, 20)
+Sample Mean: 0.6851892190888587
+Sample Median: 0.8110236220472441
+Sample Variance: 0.10523865586466064
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.32440507989959194
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+30 Exathlon_1_2_100000_68
+(7319, 20)
+Sample Mean: 0.7420927742591333
+Sample Median: 0.9259259259259259
+Sample Variance: 0.11192371062659727
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.33455001214556435
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+31 Exathlon_1_4_1000000_80
+(664, 20)
+Sample Mean: 0.7981791027858032
+Sample Median: 0.986054678941021
+Sample Variance: 0.11009838051432252
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.33181076009424787
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+32 Exathlon_1_5_1000000_86
+(9331, 20)
+Sample Mean: 0.18064640518627587
+Sample Median: 0.002392387577923154
+Sample Variance: 0.11089552296396936
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.3330097940961637
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+33 Exathlon_2_1_100000_60
+(574, 20)
+Sample Mean: 0.0648040478621346
+Sample Median: 0.0
+Sample Variance: 0.05210456294287177
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.22826423929926423
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+34 Exathlon_2_2_200000_69
+(8619, 20)
+Sample Mean: 0.17363600930453207
+Sample Median: 0.004671504066437832
+Sample Variance: 0.08457459613891785
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.29081711802938603
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+35 Exathlon_2_5_1000000_87
+(567, 20)
+Sample Mean: 0.6432392658856234
+Sample Median: 0.75
+Sample Variance: 0.13765875182718856
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.3710239235240614
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+36 Exathlon_2_5_1000000_88
+(522, 20)
+Sample Mean: 0.6985667216967382
+Sample Median: 0.8
+Sample Variance: 0.10879872191204605
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.32984651265709336
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+37 Exathlon_3_2_500000_70
+(701, 20)
+Sample Mean: 0.677790945045227
+Sample Median: 0.9464172800524426
+Sample Variance: 0.16857427827540775
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.4105779807483686
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+38 Exathlon_3_4_1000000_81
+(1183, 20)
+Sample Mean: 0.1688363431390406
+Sample Median: 0.002625011410447139
+Sample Variance: 0.08814888538792413
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.29689877970096834
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+39 Exathlon_3_5_1000000_89
+(24109, 20)
+Sample Mean: 0.17275887901514958
+Sample Median: 0.0
+Sample Variance: 0.13114498458625462
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.3621394546114171
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+40 Exathlon_4_1_100000_61
+(513, 20)
+Sample Mean: 0.14145597618615766
+Sample Median: 0.004829299385796956
+Sample Variance: 0.07183422618452426
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.2680190780234203
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+41 Exathlon_4_5_1000000_90
+(8613, 20)
+Sample Mean: 0.8172414491190994
+Sample Median: 0.9932389995197103
+Sample Variance: 0.09196834926157864
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.30326283857666875
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+42 Exathlon_5_1_100000_63
+(9332, 20)
+Sample Mean: 0.8561831709673943
+Sample Median: 0.9904434201148584
+Sample Variance: 0.05016622789740285
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.22397818620884233
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+43 Exathlon_5_1_100000_64
+(8435, 20)
+Sample Mean: 0.795257675799468
+Sample Median: 0.9649119904711488
+Sample Variance: 0.09212914172698569
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.30352782694011055
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+44 Exathlon_5_1_500000_62
+(496, 20)
+Sample Mean: 0.4959591106717567
+Sample Median: 0.4462146549006625
+Sample Variance: 0.16905022833142058
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.4111571820258289
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+45 Exathlon_5_2_1000000_72
+(688, 20)
+Sample Mean: 0.40728726757763306
+Sample Median: 0.10260750897067161
+Sample Variance: 0.20137937746008078
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.44875313643481174
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+46 Exathlon_5_4_1000000_82
+(8614, 20)
+Sample Mean: 0.7629399204293668
+Sample Median: 0.969720691198924
+Sample Variance: 0.13692343049086655
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.3700316614708349
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+47 Exathlon_5_5_1000000_91
+(8427, 20)
+Sample Mean: 0.6774861618626871
+Sample Median: 0.855425162193376
+Sample Variance: 0.1275559318709737
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.35714973312460097
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+48 Exathlon_6_1_500000_65
+(9330, 20)
+Sample Mean: 0.20855634916377258
+Sample Median: 0.00764675653898793
+Sample Variance: 0.1128805149684089
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.3359769560080109
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+49 Exathlon_6_3_200000_76
+(9328, 20)
+Sample Mean: 0.12124161022504745
+Sample Median: 0.00454977333141114
+Sample Variance: 0.06228564226429538
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.2495709163029526
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+50 Exathlon_8_3_200000_73
+(7319, 20)
+Sample Mean: 0.43256909835130697
+Sample Median: 0.36950267980320817
+Sample Variance: 0.12349235713717116
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.3514147935661946
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+51 Exathlon_8_4_1000000_77
+(1181, 20)
+Sample Mean: 0.6813377172246698
+Sample Median: 0.9166666666666666
+Sample Variance: 0.160045470921493
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.40005683461414954
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+52 Exathlon_8_5_1000000_83
+(1496, 20)
+Sample Mean: 0.1704684108062725
+Sample Median: 0.0
+Sample Variance: 0.11336609122292406
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.33669881381276656
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+53 Exathlon_9_2_1000000_66
+(8998, 20)
+Sample Mean: 0.4327879046262284
+Sample Median: 0.3376102140278915
+Sample Variance: 0.14999589144031628
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.3872930304566767
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+54 Exathlon_9_3_500000_74
+(7325, 20)
+Sample Mean: 0.2552246478789163
+Sample Median: 0.0027603185720984687
+Sample Variance: 0.14602996106981678
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.3821386673313979
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+55 Exathlon_9_4_1000000_78
+(1182, 20)
+Sample Mean: 0.6258529674814906
+Sample Median: 0.7744360902255638
+Sample Variance: 0.1382651459014049
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.37184021555152547
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+56 Exathlon_9_5_1000000_84
+(27560, 9)
+Sample Mean: 0.452971327202052
+Sample Median: 0.4864864864864864
+Sample Variance: 0.04143638878432827
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.2035593004122589
+++++++++++++++++++++++++++++++++++++++
+n_features
+9
+57 GECCO_water_quality
+(120000, 16)
+Sample Mean: 0.4394446203988233
+Sample Median: 0.3979682815717338
+Sample Variance: 0.17731292616133976
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.421085414329848
+++++++++++++++++++++++++++++++++++++++
+n_features
+16
+58 GHL_17_Lev_fault_Temp_corr_seed_57_vars_23
+(120000, 16)
+Sample Mean: 0.4143164762435202
+Sample Median: 0.34943854479078285
+Sample Variance: 0.16854550323582035
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.4105429371403439
+++++++++++++++++++++++++++++++++++++++
+n_features
+16
+59 GHL_18_Lev_fault_Temp_corr_seed_59_vars_23
+(120000, 16)
+Sample Mean: 0.4388130544882741
+Sample Median: 0.3962205943234894
+Sample Variance: 0.17719218055085567
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.4209420156635064
+++++++++++++++++++++++++++++++++++++++
+n_features
+16
+60 GHL_19_Lev_fault_Temp_corr_seed_62_vars_23
+(120000, 16)
+Sample Mean: 0.43251019120190787
+Sample Median: 0.40699551523838806
+Sample Variance: 0.17344282234950686
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.4164646711901345
+++++++++++++++++++++++++++++++++++++++
+n_features
+16
+61 GHL_20_Lev_fault_Temp_corr_seed_67_vars_23
+(120000, 16)
+Sample Mean: 0.4306921788323701
+Sample Median: 0.36924703154331895
+Sample Variance: 0.17232372008106395
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.4151189228173825
+++++++++++++++++++++++++++++++++++++++
+n_features
+16
+62 GHL_21_Lev_fault_Temp_corr_seed_73_vars_23
+(120000, 16)
+Sample Mean: 0.430676909719359
+Sample Median: 0.3912549906227373
+Sample Variance: 0.1707839866778581
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.4132601924669954
+++++++++++++++++++++++++++++++++++++++
+n_features
+16
+63 GHL_22_Lev_fault_Temp_corr_seed_777_vars_23
+(120000, 16)
+Sample Mean: 0.4304472727802335
+Sample Median: 0.3785092640239447
+Sample Variance: 0.17486792340306806
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.41817212174303064
+++++++++++++++++++++++++++++++++++++++
+n_features
+16
+64 GHL_24_Lev_fault_Temp_corr_seed_83_vars_23
+(85137, 16)
+Sample Mean: 0.40771504393987384
+Sample Median: 0.3817988296260628
+Sample Variance: 0.15420528948675533
+Sample Min: 0.0
+Sample Max: 1.0000000000000009
+Sample Standard Deviation: 0.39268981332185754
+++++++++++++++++++++++++++++++++++++++
+n_features
+16
+65 GHL_41_Lev_corr_Temp_fault_seed_181_vars_23
+(120000, 16)
+Sample Mean: 0.41863417162406114
+Sample Median: 0.3520992604630644
+Sample Variance: 0.16936740158434527
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.4115427093077282
+++++++++++++++++++++++++++++++++++++++
+n_features
+16
+66 GHL_43_Lev_corr_Temp_fault_seed_189_vars_23
+(120000, 16)
+Sample Mean: 0.41941583018061834
+Sample Median: 0.3539792723916911
+Sample Variance: 0.17032238059483337
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.4127013212903896
+++++++++++++++++++++++++++++++++++++++
+n_features
+16
+67 GHL_44_Lev_corr_Temp_fault_seed_190_vars_23
+(120000, 16)
+Sample Mean: 0.42774979224468773
+Sample Median: 0.3866234682176035
+Sample Variance: 0.1749203857656996
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.41823484523135995
+++++++++++++++++++++++++++++++++++++++
+n_features
+16
+68 GHL_45_Lev_corr_Temp_fault_seed_193_vars_23
+(120000, 16)
+Sample Mean: 0.4296800203264985
+Sample Median: 0.3901043828791355
+Sample Variance: 0.17243243898774993
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.4152498512796241
+++++++++++++++++++++++++++++++++++++++
+n_features
+16
+69 GHL_46_Lev_corr_Temp_fault_seed_194_vars_23
+(120000, 16)
+Sample Mean: 0.4194202647602381
+Sample Median: 0.3497543374528314
+Sample Variance: 0.1713045045145788
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.41388948345491794
+++++++++++++++++++++++++++++++++++++++
+n_features
+16
+70 GHL_47_Lev_corr_Temp_fault_seed_197_vars_23
+(120000, 16)
+Sample Mean: 0.43074247661356807
+Sample Median: 0.39139678773222286
+Sample Variance: 0.17319773827254628
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.4161703236327
+++++++++++++++++++++++++++++++++++++++
+n_features
+16
+71 GHL_48_Lev_corr_Temp_fault_seed_199_vars_23
+(3244, 18)
+Sample Mean: 0.37021370900662626
+Sample Median: 0.06281030814090946
+Sample Variance: 0.175516409539753
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.4189467860477665
+++++++++++++++++++++++++++++++++++++++
+n_features
+18
+72 Genesis
+(1000, 20)
+Sample Mean: 0.461492331259538
+Sample Median: 0.4275524996560047
+Sample Variance: 0.10520584493489984
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.32435450503253355
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+73 GutenTAG_0
+(1000, 20)
+Sample Mean: 0.4726931652220729
+Sample Median: 0.4537946100812958
+Sample Variance: 0.09834256508325374
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.3135961815508182
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+74 GutenTAG_10
+(1000, 20)
+Sample Mean: 0.4833714776464949
+Sample Median: 0.45474941136323443
+Sample Variance: 0.09220508590204858
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.30365290366148084
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+75 GutenTAG_11
+(1000, 20)
+Sample Mean: 0.4762522846333847
+Sample Median: 0.46279540464214547
+Sample Variance: 0.09735134509453262
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.3120117707627913
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+76 GutenTAG_12
+(1000, 20)
+Sample Mean: 0.4543617926538553
+Sample Median: 0.4169274591412832
+Sample Variance: 0.07981715256469889
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.28251929591569297
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+77 GutenTAG_13
+(1000, 20)
+Sample Mean: 0.508446234738051
+Sample Median: 0.49018315069497104
+Sample Variance: 0.1220756305366004
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.3493932319559158
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+78 GutenTAG_14
+(1000, 20)
+Sample Mean: 0.4902551100346459
+Sample Median: 0.48742872569573115
+Sample Variance: 0.12766624851499878
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.3573041400753688
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+79 GutenTAG_15
+(1000, 20)
+Sample Mean: 0.4873353216854122
+Sample Median: 0.48923950397170185
+Sample Variance: 0.10919524358279921
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.33044703597218
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+80 GutenTAG_16
+(1000, 20)
+Sample Mean: 0.5154896113402058
+Sample Median: 0.5
+Sample Variance: 0.10434186345649761
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.3230199118576092
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+81 GutenTAG_17
+(1000, 20)
+Sample Mean: 0.4415322463056288
+Sample Median: 0.3921108968370551
+Sample Variance: 0.09136762959221201
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.3022707885195194
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+82 GutenTAG_18
+(1000, 20)
+Sample Mean: 0.4863603374612105
+Sample Median: 0.44446932829006675
+Sample Variance: 0.13477056336373058
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.36711110493109655
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+83 GutenTAG_19
+(1000, 20)
+Sample Mean: 0.47938057858624045
+Sample Median: 0.48304103587709357
+Sample Variance: 0.07139340575937246
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.26719544487017827
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+84 GutenTAG_1
+(1000, 20)
+Sample Mean: 0.46205210767721566
+Sample Median: 0.4579686765015633
+Sample Variance: 0.12029950640047593
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.34684219235911296
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+85 GutenTAG_20
+(1000, 20)
+Sample Mean: 0.4653933287284082
+Sample Median: 0.41146823330052434
+Sample Variance: 0.1147101092718331
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.33868880889665237
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+86 GutenTAG_21
+(1000, 20)
+Sample Mean: 0.5053897780278731
+Sample Median: 0.5
+Sample Variance: 0.12672726065626636
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.35598772542921525
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+87 GutenTAG_22
+(1000, 20)
+Sample Mean: 0.46959242321519296
+Sample Median: 0.41538712221019336
+Sample Variance: 0.0904318759570449
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.3007189318234635
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+88 GutenTAG_23
+(1000, 20)
+Sample Mean: 0.46135066310838513
+Sample Median: 0.43655625241689766
+Sample Variance: 0.10221203957699079
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.3197061769453177
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+89 GutenTAG_24
+(1000, 20)
+Sample Mean: 0.4365176668064227
+Sample Median: 0.381631255537808
+Sample Variance: 0.11504611117270258
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.3391844795575154
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+90 GutenTAG_25
+(1000, 20)
+Sample Mean: 0.4805199329216998
+Sample Median: 0.4249755568612539
+Sample Variance: 0.12400830163838666
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.35214812457031014
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+91 GutenTAG_26
+(1000, 20)
+Sample Mean: 0.4598510884575172
+Sample Median: 0.4260291608946595
+Sample Variance: 0.0978127631893929
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.312750320846187
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+92 GutenTAG_27
+(1000, 20)
+Sample Mean: 0.45395170207531055
+Sample Median: 0.435662604154343
+Sample Variance: 0.07521372313370223
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.2742512044343693
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+93 GutenTAG_28
+(1000, 20)
+Sample Mean: 0.4750321970332926
+Sample Median: 0.4590202048806851
+Sample Variance: 0.09516242133613587
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.3084840698255517
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+94 GutenTAG_29
+(1000, 20)
+Sample Mean: 0.47609769316197365
+Sample Median: 0.4500054962186834
+Sample Variance: 0.06561103439198973
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.25614650962289087
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+95 GutenTAG_2
+(1000, 20)
+Sample Mean: 0.46683124479703075
+Sample Median: 0.457799565322975
+Sample Variance: 0.08671634234100707
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.29447638672906706
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+96 GutenTAG_3
+(1000, 20)
+Sample Mean: 0.46576559728662176
+Sample Median: 0.4608459377392473
+Sample Variance: 0.08801119892368746
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.29666681466535394
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+97 GutenTAG_4
+(1000, 20)
+Sample Mean: 0.4787108186994751
+Sample Median: 0.4588460333446037
+Sample Variance: 0.09532227125318321
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.3087430505342318
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+98 GutenTAG_5
+(1000, 20)
+Sample Mean: 0.44928238542564275
+Sample Median: 0.426228871954506
+Sample Variance: 0.08553031842822374
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.29245566916752314
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+99 GutenTAG_6
+(1000, 20)
+Sample Mean: 0.4689962994559617
+Sample Median: 0.4540464332078698
+Sample Variance: 0.07417584108877705
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.2723524207507197
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+100 GutenTAG_7
+(1000, 20)
+Sample Mean: 0.45564806739782626
+Sample Median: 0.4346443648613483
+Sample Variance: 0.10194212398817452
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.3192837671855156
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+101 GutenTAG_8
+(1000, 20)
+Sample Mean: 0.4734700798797132
+Sample Median: 0.4545454545454546
+Sample Variance: 0.10579977830650801
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.32526877856091263
+++++++++++++++++++++++++++++++++++++++
+n_features
+20
+102 GutenTAG_9
+(128264, 2)
+Sample Mean: 0.3425284837236407
+Sample Median: 0.36124401913875603
+Sample Variance: 0.02096915858349818
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.14480731536596547
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+103 MITDB_100
+(128599, 2)
+Sample Mean: 0.4306986535099058
+Sample Median: 0.4298688193743694
+Sample Variance: 0.0036450450945729406
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.060374208852563366
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+104 MITDB_101
+(120701, 2)
+Sample Mean: 0.43483728765741164
+Sample Median: 0.38858695652173914
+Sample Variance: 0.04124919350071209
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.20309897464219778
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+105 MITDB_102
+(130000, 2)
+Sample Mean: 0.24940707714452148
+Sample Median: 0.25259515570934254
+Sample Variance: 0.013854911905746075
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1177068897972675
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+106 MITDB_103
+(88537, 2)
+Sample Mean: 0.5587763640434081
+Sample Median: 0.564885496183206
+Sample Variance: 0.009555707622648124
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.09775329980439598
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+107 MITDB_104
+(123830, 2)
+Sample Mean: 0.3920535716779796
+Sample Median: 0.41002949852507387
+Sample Variance: 0.03659448825090705
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.19129685896769724
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+108 MITDB_105
+(108777, 2)
+Sample Mean: 0.36719253800267854
+Sample Median: 0.38116591928251126
+Sample Variance: 0.018647580300260366
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1365561433999231
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+109 MITDB_106
+(129352, 2)
+Sample Mean: 0.5597347497455424
+Sample Median: 0.5929705215419501
+Sample Variance: 0.025014428570141595
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.15815950357200037
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+110 MITDB_107
+(126903, 2)
+Sample Mean: 0.5018791053568776
+Sample Median: 0.5069380203515264
+Sample Variance: 0.0073122562198354385
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.08551173147490021
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+111 MITDB_108
+(127726, 2)
+Sample Mean: 0.5153094406491072
+Sample Median: 0.485207100591716
+Sample Variance: 0.028465468293295926
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1687171250741783
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+112 MITDB_109
+(130000, 2)
+Sample Mean: 0.3828523245782208
+Sample Median: 0.3917410714285714
+Sample Variance: 0.008379755329720863
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.09154100354333496
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+113 MITDB_111
+(130000, 2)
+Sample Mean: 0.36731227824321344
+Sample Median: 0.36659877800407337
+Sample Variance: 0.009094823029159708
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.09536678158121782
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+114 MITDB_112
+(129596, 2)
+Sample Mean: 0.39983355576209606
+Sample Median: 0.39877300613496935
+Sample Variance: 0.02776447405055853
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.16662675070515698
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+115 MITDB_113
+(121365, 2)
+Sample Mean: 0.36048369394858065
+Sample Median: 0.3908450704225353
+Sample Variance: 0.05895515588588682
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.24280682833455655
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+116 MITDB_114
+(130000, 2)
+Sample Mean: 0.4756947609868761
+Sample Median: 0.4560669456066946
+Sample Variance: 0.02781365561685607
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1667742654514061
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+117 MITDB_115
+(125696, 2)
+Sample Mean: 0.45764453067231997
+Sample Median: 0.44907407407407407
+Sample Variance: 0.049467544960456314
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.2224130053761612
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+118 MITDB_116
+(130000, 2)
+Sample Mean: 0.4326826991758242
+Sample Median: 0.4375
+Sample Variance: 0.018821745607900373
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.13719236716341174
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+119 MITDB_117
+(122261, 2)
+Sample Mean: 0.48664259017576766
+Sample Median: 0.49397590361445787
+Sample Variance: 0.009472119557036822
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.09732481470332642
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+120 MITDB_118
+(84828, 2)
+Sample Mean: 0.46398747116773326
+Sample Median: 0.41329479768786115
+Sample Variance: 0.09011237410668264
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.30018723175158973
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+121 MITDB_119
+(130000, 2)
+Sample Mean: 0.5375619188070455
+Sample Median: 0.5800415800415801
+Sample Variance: 0.029817085511915187
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.17267624478171625
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+122 MITDB_121
+(130000, 2)
+Sample Mean: 0.487503495072631
+Sample Median: 0.4651162790697673
+Sample Variance: 0.016328604899052364
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.12778342967322626
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+123 MITDB_122
+(130000, 2)
+Sample Mean: 0.44180756537008403
+Sample Median: 0.42483660130718964
+Sample Variance: 0.007482766873667209
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.08650298765746307
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+124 MITDB_123
+(111390, 2)
+Sample Mean: 0.3876931887320215
+Sample Median: 0.4121739130434782
+Sample Variance: 0.022517371707468956
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.15005789451897877
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+125 MITDB_124
+(84232, 2)
+Sample Mean: 0.42876513059754845
+Sample Median: 0.4684638860630722
+Sample Variance: 0.00998739150810952
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.0999369376562516
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+126 MITDB_200
+(129199, 2)
+Sample Mean: 0.451603124223071
+Sample Median: 0.4755244755244756
+Sample Variance: 0.10243689522384763
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.3200576435954118
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+127 MITDB_201
+(127192, 2)
+Sample Mean: 0.5139108482421794
+Sample Median: 0.5328798185941042
+Sample Variance: 0.11094008788388292
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.33307669970125936
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+128 MITDB_202
+(107060, 2)
+Sample Mean: 0.5430457703707631
+Sample Median: 0.5305651672433679
+Sample Variance: 0.021038371121170865
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.14504609998607637
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+129 MITDB_203
+(126615, 2)
+Sample Mean: 0.36656611642009973
+Sample Median: 0.36693548387096764
+Sample Variance: 0.03368896364303207
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.18354553561182596
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+130 MITDB_205
+(68518, 2)
+Sample Mean: 0.5046334637471325
+Sample Median: 0.5192465192465192
+Sample Variance: 0.020049897638635468
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1415976611340578
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+131 MITDB_207
+(67863, 2)
+Sample Mean: 0.34226929711440623
+Sample Median: 0.3560267857142857
+Sample Variance: 0.009613697267180447
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.0980494633701809
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+132 MITDB_208
+(125025, 2)
+Sample Mean: 0.3888960528452988
+Sample Median: 0.3848684210526316
+Sample Variance: 0.006161829292927868
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.07849732029138236
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+133 MITDB_209
+(119587, 2)
+Sample Mean: 0.4463424864101334
+Sample Median: 0.4638242894056847
+Sample Variance: 0.010646971885033493
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.10318416489478166
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+134 MITDB_210
+(130000, 2)
+Sample Mean: 0.3830819487704658
+Sample Median: 0.374496644295302
+Sample Variance: 0.009030519906121089
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.09502904769659164
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+135 MITDB_212
+(102288, 2)
+Sample Mean: 0.5353503904899726
+Sample Median: 0.4916067146282974
+Sample Variance: 0.06433605588038999
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.25364553195432005
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+136 MITDB_213
+(107172, 2)
+Sample Mean: 0.4826376205171002
+Sample Median: 0.4585908529048207
+Sample Variance: 0.03263568450520167
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.18065349292278207
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+137 MITDB_214
+(121803, 2)
+Sample Mean: 0.4216201101785628
+Sample Median: 0.41385435168738893
+Sample Variance: 0.0063265077489066054
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.07953934717425461
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+138 MITDB_215
+(111255, 2)
+Sample Mean: 0.5885698286761927
+Sample Median: 0.6252723311546841
+Sample Variance: 0.027812442785156252
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.16677062926413708
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+139 MITDB_217
+(123467, 2)
+Sample Mean: 0.3306162164694651
+Sample Median: 0.3188054882970137
+Sample Variance: 0.01331232121364628
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.11537903281639295
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+140 MITDB_219
+(128601, 2)
+Sample Mean: 0.5620199480310617
+Sample Median: 0.5348837209302324
+Sample Variance: 0.03997522367477825
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1999380495923131
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+141 MITDB_220
+(99518, 2)
+Sample Mean: 0.3351693774653848
+Sample Median: 0.28378378378378377
+Sample Variance: 0.026742740635535327
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.16353207830739303
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+142 MITDB_221
+(130000, 2)
+Sample Mean: 0.5417770423001655
+Sample Median: 0.4767123287671232
+Sample Variance: 0.07337415003910851
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.2708766325084327
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+143 MITDB_222
+(119496, 2)
+Sample Mean: 0.338129690610383
+Sample Median: 0.37812500000000004
+Sample Variance: 0.029694209584708618
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1723200788785469
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+144 MITDB_223
+(95543, 2)
+Sample Mean: 0.5726670461899823
+Sample Median: 0.6037735849056602
+Sample Variance: 0.014784468998265446
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.12159140182704305
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+145 MITDB_228
+(130000, 2)
+Sample Mean: 0.5451223382519054
+Sample Median: 0.5351201478743068
+Sample Variance: 0.006777638561851226
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.08232641472729896
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+146 MITDB_230
+(29153, 2)
+Sample Mean: 0.41820875328474694
+Sample Median: 0.4262295081967213
+Sample Variance: 0.010896908050100601
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.10438825628441449
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+147 MITDB_232
+(84478, 2)
+Sample Mean: 0.5822773113192513
+Sample Median: 0.577922077922078
+Sample Variance: 0.026808021561227635
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.16373155334640796
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+148 MITDB_233
+(130000, 2)
+Sample Mean: 0.309472865008483
+Sample Median: 0.2977777777777778
+Sample Variance: 0.008800308336623403
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.09380995862179774
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+149 MITDB_234
+(2158, 54)
+Sample Mean: 0.006754759026670316
+Sample Median: 0.0
+Sample Variance: 0.00533086434794688
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.07301276838982947
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+150 MSL_C-1
+(764, 54)
+Sample Mean: 0.012822377351173163
+Sample Median: 0.0
+Sample Variance: 0.012657963990237282
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.11250761747649482
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+151 MSL_C-2
+(3675, 54)
+Sample Mean: 0.005255731922398589
+Sample Median: 0.0
+Sample Variance: 0.005228109204358472
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.07230566509173726
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+152 MSL_D-14
+(2074, 54)
+Sample Mean: 0.02040265766007087
+Sample Median: 0.0
+Sample Variance: 0.018809607325012093
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1371481218428167
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+153 MSL_D-15
+(1451, 54)
+Sample Mean: 0.016279278511271193
+Sample Median: 0.0
+Sample Variance: 0.015876309335836867
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.12600122751718282
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+154 MSL_D-16
+(2244, 54)
+Sample Mean: 0.006675939897645912
+Sample Median: 0.0
+Sample Variance: 0.004263513023629075
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.06529558196102608
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+155 MSL_F-4
+(2598, 54)
+Sample Mean: 0.004858178821320884
+Sample Median: 0.0
+Sample Variance: 0.003118480896379077
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.055843360360736505
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+156 MSL_F-5
+(2511, 54)
+Sample Mean: 0.005533457021907838
+Sample Median: 0.0
+Sample Variance: 0.004314164504490398
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.06568229978076588
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+157 MSL_F-7
+(3342, 54)
+Sample Mean: 0.0037256873625173183
+Sample Median: 0.0
+Sample Variance: 0.00306825332875689
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.055391816442114356
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+158 MSL_F-8
+(2209, 54)
+Sample Mean: 0.012644890355025596
+Sample Median: 0.0
+Sample Variance: 0.00884035820271637
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.09402317907152666
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+159 MSL_M-1
+(2208, 54)
+Sample Mean: 0.008622839027754034
+Sample Median: 0.0
+Sample Variance: 0.006378701567358234
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.07986677386346737
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+160 MSL_M-2
+(2037, 54)
+Sample Mean: 0.022425034566949612
+Sample Median: 0.0
+Sample Variance: 0.020910306335558283
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1446039637615729
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+161 MSL_M-3
+(2076, 54)
+Sample Mean: 0.022709831766654184
+Sample Median: 0.0
+Sample Variance: 0.02116109334063774
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1454685304134119
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+162 MSL_M-4
+(2032, 54)
+Sample Mean: 0.012302452156973169
+Sample Median: 0.0
+Sample Variance: 0.009792612345917764
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.0989576290435344
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+163 MSL_M-5
+(1565, 54)
+Sample Mean: 0.0090285173352266
+Sample Median: 0.0
+Sample Variance: 0.008947003209954112
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.0945885997885269
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+164 MSL_M-6
+(1587, 54)
+Sample Mean: 0.008979582866545719
+Sample Median: 0.0
+Sample Variance: 0.00881396559852001
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.09388272257726663
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+165 MSL_M-7
+(4308, 54)
+Sample Mean: 0.011411920018646554
+Sample Median: 0.0
+Sample Variance: 0.006776347391405396
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.08231857257876497
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+166 MSL_P-10
+(3969, 54)
+Sample Mean: 0.01603568471704746
+Sample Median: 0.0
+Sample Variance: 0.013082052312571597
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.11437679971292954
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+167 MSL_P-11
+(2880, 54)
+Sample Mean: 0.011350808756288426
+Sample Median: 0.0
+Sample Variance: 0.0067185994902608645
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.08196706344783168
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+168 MSL_P-14
+(3682, 54)
+Sample Mean: 0.01592472344501875
+Sample Median: 0.0
+Sample Variance: 0.012816994487499954
+Sample Min: 0.0
+Sample Max: 1.0000000000000004
+Sample Standard Deviation: 0.11321216581048149
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+169 MSL_P-15
+(926, 54)
+Sample Mean: 0.013038956883449323
+Sample Median: 0.0
+Sample Variance: 0.01286894248684087
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.11344136144652385
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+170 MSL_S-2
+(1145, 54)
+Sample Mean: 0.008789367836894789
+Sample Median: 0.0
+Sample Variance: 0.005234208587238814
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.07234783056345791
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+171 MSL_T-12
+(1145, 54)
+Sample Mean: 0.010623173424887574
+Sample Median: 0.0
+Sample Variance: 0.007187312568171424
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.08477801936924113
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+172 MSL_T-13
+(2272, 54)
+Sample Mean: 0.013831833594157537
+Sample Median: 0.0
+Sample Variance: 0.013640513973581079
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.11679261095455089
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+173 MSL_T-4
+(2272, 54)
+Sample Mean: 0.004971961398017736
+Sample Median: 0.0
+Sample Variance: 0.004947240997874356
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.07033662629010831
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+174 MSL_T-5
+(748, 54)
+Sample Mean: 0.010810841195893766
+Sample Median: 0.0
+Sample Variance: 0.010687427572705308
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.10338001534486879
+++++++++++++++++++++++++++++++++++++++
+n_features
+54
+175 MSL_T-8
+(5684, 32)
+Sample Mean: 0.50744448485365
+Sample Median: 0.5043983492615117
+Sample Variance: 0.015655617598633268
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.1251224104572529
+++++++++++++++++++++++++++++++++++++++
+n_features
+32
+176 OPPORTUNITY_S1-ADL2
+(6006, 32)
+Sample Mean: 0.5019850792017615
+Sample Median: 0.505536440412887
+Sample Variance: 0.017385805948222276
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.13185524619150454
+++++++++++++++++++++++++++++++++++++++
+n_features
+32
+177 OPPORTUNITY_S1-ADL3
+(5893, 32)
+Sample Mean: 0.4920218054757211
+Sample Median: 0.4812810699045357
+Sample Variance: 0.014448179964144731
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.12020058221217038
+++++++++++++++++++++++++++++++++++++++
+n_features
+32
+178 OPPORTUNITY_S1-ADL4
+(5392, 32)
+Sample Mean: 0.4798464496262168
+Sample Median: 0.4805543525335643
+Sample Variance: 0.01515613978228601
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.12311027488510456
+++++++++++++++++++++++++++++++++++++++
+n_features
+32
+179 OPPORTUNITY_S1-ADL5
+(7667, 32)
+Sample Mean: 0.47668999748992186
+Sample Median: 0.4765430111853222
+Sample Variance: 0.015693084154731637
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.12527204059458613
+++++++++++++++++++++++++++++++++++++++
+n_features
+32
+180 OPPORTUNITY_S2-ADL1
+(5567, 32)
+Sample Mean: 0.4948830433714762
+Sample Median: 0.5084124830393487
+Sample Variance: 0.018357043965360562
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1354881690973812
+++++++++++++++++++++++++++++++++++++++
+n_features
+32
+181 OPPORTUNITY_S2-ADL2
+(4201, 32)
+Sample Mean: 0.49618048932714987
+Sample Median: 0.5273591584909477
+Sample Variance: 0.02242472873523837
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.14974888558930372
+++++++++++++++++++++++++++++++++++++++
+n_features
+32
+182 OPPORTUNITY_S3-ADL3
+(3825, 32)
+Sample Mean: 0.46061175234349205
+Sample Median: 0.46012396694214874
+Sample Variance: 0.024911939558771516
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.15783516578624524
+++++++++++++++++++++++++++++++++++++++
+n_features
+32
+183 OPPORTUNITY_S3-ADL4
+(4238, 32)
+Sample Mean: 0.48712554437788796
+Sample Median: 0.4952370151961896
+Sample Variance: 0.021486212662085464
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1465817610144095
+++++++++++++++++++++++++++++++++++++++
+n_features
+32
+184 OPPORTUNITY_S3-ADL5
+(5330, 32)
+Sample Mean: 0.48157531135481324
+Sample Median: 0.4650043648511279
+Sample Variance: 0.023659918626734847
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.1538178098489731
+++++++++++++++++++++++++++++++++++++++
+n_features
+32
+185 OPPORTUNITY_S4-ADL2
+(4259, 32)
+Sample Mean: 0.48144873796714227
+Sample Median: 0.4999560671294263
+Sample Variance: 0.02261730773739371
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1503905174450627
+++++++++++++++++++++++++++++++++++++++
+n_features
+32
+186 OPPORTUNITY_S4-ADL3
+(4090, 32)
+Sample Mean: 0.4893157143010246
+Sample Median: 0.5036694320357371
+Sample Variance: 0.0247713786804333
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.15738925846586005
+++++++++++++++++++++++++++++++++++++++
+n_features
+32
+187 OPPORTUNITY_S4-ADL4
+(5625, 32)
+Sample Mean: 0.488005697606389
+Sample Median: 0.505146012885951
+Sample Variance: 0.019602104782449548
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1400075168783789
+++++++++++++++++++++++++++++++++++++++
+n_features
+32
+188 OPPORTUNITY_S4-ADL5
+(132481, 25)
+Sample Mean: 0.3926048003636049
+Sample Median: 0.4053517512077295
+Sample Variance: 0.06273623507218712
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.2504720245300603
+++++++++++++++++++++++++++++++++++++++
+n_features
+25
+189 PSM
+(2880, 24)
+Sample Mean: 0.022598379629629628
+Sample Median: 0.0
+Sample Variance: 0.02208769286774477
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1486192883435551
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+190 SMAP_A-1
+(2648, 24)
+Sample Mean: 0.04460955005694269
+Sample Median: 0.0
+Sample Variance: 0.03550501606578836
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.18842774760047512
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+191 SMAP_A-2
+(2736, 24)
+Sample Mean: 0.04450130227670693
+Sample Median: 0.0
+Sample Variance: 0.03442596034300455
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.18554234110575554
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+192 SMAP_A-3
+(2690, 24)
+Sample Mean: 0.04559085960092767
+Sample Median: 0.0
+Sample Variance: 0.0344619925517969
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.18563941540469497
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+193 SMAP_A-4
+(705, 24)
+Sample Mean: 0.0239685807976808
+Sample Median: 0.0
+Sample Variance: 0.015043227052970539
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1226508338861605
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+194 SMAP_A-5
+(682, 24)
+Sample Mean: 0.01568339945949071
+Sample Median: 0.0
+Sample Variance: 0.01259324463822131
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.11221962679594559
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+195 SMAP_A-6
+(762, 24)
+Sample Mean: 0.018319159353644098
+Sample Median: 0.0
+Sample Variance: 0.017982431216823507
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.13409858767646848
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+196 SMAP_A-8
+(762, 24)
+Sample Mean: 0.028478042844817558
+Sample Median: 0.0
+Sample Variance: 0.027547806263563058
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.165975318236065
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+197 SMAP_A-9
+(2435, 24)
+Sample Mean: 0.004175222450376454
+Sample Median: 0.0
+Sample Variance: 0.004157789967866326
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.06448092716351345
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+198 SMAP_B-1
+(2611, 24)
+Sample Mean: 0.018422769763252335
+Sample Median: 0.0
+Sample Variance: 0.011458187897561893
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.10704292549048673
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+199 SMAP_D-11
+(2849, 24)
+Sample Mean: 0.04492987305487305
+Sample Median: 0.0
+Sample Variance: 0.033491070532662016
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.18300565710562616
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+200 SMAP_D-1
+(2880, 24)
+Sample Mean: 0.021875
+Sample Median: 0.0
+Sample Variance: 0.021396484375
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.14627537173085564
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+201 SMAP_D-2
+(2880, 24)
+Sample Mean: 0.042584335745464615
+Sample Median: 0.0
+Sample Variance: 0.03387649602602108
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1840556872960493
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+202 SMAP_D-3
+(2833, 24)
+Sample Mean: 0.03950044543055513
+Sample Median: 0.0
+Sample Variance: 0.031866216367994
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.17851110992874925
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+203 SMAP_D-4
+(2561, 24)
+Sample Mean: 0.03920273594340522
+Sample Median: 0.0
+Sample Variance: 0.02985395935593242
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.17278298340962983
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+204 SMAP_D-5
+(2594, 24)
+Sample Mean: 0.040926330611575065
+Sample Median: 0.0
+Sample Variance: 0.031006445140547154
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.17608647063459235
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+205 SMAP_D-6
+(2583, 24)
+Sample Mean: 0.02489030842689379
+Sample Median: 0.0
+Sample Variance: 0.024270780973307902
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.15579082441950137
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+206 SMAP_D-7
+(2602, 24)
+Sample Mean: 0.003154624647706892
+Sample Median: 0.0
+Sample Variance: 0.003144672991038972
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.05607738395323887
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+207 SMAP_D-8
+(2583, 24)
+Sample Mean: 0.004516711833785004
+Sample Median: 0.0
+Sample Variance: 0.004496311147995551
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.06705453860847564
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+208 SMAP_D-9
+(2880, 24)
+Sample Mean: 0.030989082356785963
+Sample Median: 0.0
+Sample Variance: 0.030013855361046875
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.17324507312199927
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+209 SMAP_E-10
+(2880, 24)
+Sample Mean: 0.031196064404815194
+Sample Median: 0.0
+Sample Variance: 0.030212439803825892
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.17381725979840407
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+210 SMAP_E-11
+(2880, 24)
+Sample Mean: 0.03117766203703704
+Sample Median: 0.0
+Sample Variance: 0.030205615426941345
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.17379762779434405
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+211 SMAP_E-12
+(2880, 24)
+Sample Mean: 0.030564794348274055
+Sample Median: 0.0
+Sample Variance: 0.026087182200796543
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.16151526924967974
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+212 SMAP_E-13
+(2880, 24)
+Sample Mean: 0.031090856481481483
+Sample Median: 0.0
+Sample Variance: 0.030124215124729403
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.17356328852821787
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+213 SMAP_E-1
+(2880, 24)
+Sample Mean: 0.034347091040241626
+Sample Median: 0.0
+Sample Variance: 0.0276464797623815
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.16627230605961266
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+214 SMAP_E-2
+(2880, 24)
+Sample Mean: 0.045725080078282625
+Sample Median: 0.0
+Sample Variance: 0.03521491909415943
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.18765638570045898
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+215 SMAP_E-3
+(2880, 24)
+Sample Mean: 0.03503649539694732
+Sample Median: 0.0
+Sample Variance: 0.027314581219836674
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.16527123530680307
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+216 SMAP_E-4
+(2880, 24)
+Sample Mean: 0.030541087962962964
+Sample Median: 0.0
+Sample Variance: 0.029608329909001526
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.17207071194425136
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+217 SMAP_E-5
+(2880, 24)
+Sample Mean: 0.028428819444444444
+Sample Median: 0.0
+Sample Variance: 0.027620621669439627
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.16619452960142708
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+218 SMAP_E-6
+(2769, 24)
+Sample Mean: 0.029883799002029508
+Sample Median: 0.0
+Sample Variance: 0.025665634021266055
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.16020497502033468
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+219 SMAP_E-7
+(2880, 24)
+Sample Mean: 0.037825846424259554
+Sample Median: 0.0
+Sample Variance: 0.029347046863521093
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.171309797920379
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+220 SMAP_E-8
+(2880, 24)
+Sample Mean: 0.04085217085478921
+Sample Median: 0.0
+Sample Variance: 0.031717882882587374
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1780951512045945
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+221 SMAP_E-9
+(2869, 24)
+Sample Mean: 0.025396613628397225
+Sample Median: 0.0
+Sample Variance: 0.022438221906962645
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1497939314757532
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+222 SMAP_F-1
+(2861, 24)
+Sample Mean: 0.0077403400511139794
+Sample Median: 0.0
+Sample Variance: 0.005668982903767183
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.07529264840452342
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+223 SMAP_F-2
+(2880, 24)
+Sample Mean: 0.04421237358905008
+Sample Median: 0.0
+Sample Variance: 0.03531591044756093
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.18792527889446095
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+224 SMAP_F-3
+(2820, 24)
+Sample Mean: 0.0437902716774201
+Sample Median: 0.0
+Sample Variance: 0.03410718753828409
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.18468131345180563
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+225 SMAP_G-1
+(2478, 24)
+Sample Mean: 0.024078557976863063
+Sample Median: 0.0
+Sample Variance: 0.0234987810226179
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.15329312125016537
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+226 SMAP_G-2
+(2624, 24)
+Sample Mean: 0.06673971036585366
+Sample Median: 0.0
+Sample Variance: 0.06228552142613564
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.2495706742110051
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+227 SMAP_G-3
+(2881, 24)
+Sample Mean: 0.024398264325723017
+Sample Median: 0.0
+Sample Variance: 0.0168634210044217
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1298592353451294
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+228 SMAP_G-6
+(2446, 24)
+Sample Mean: 0.0413373307894976
+Sample Median: 0.0
+Sample Variance: 0.0396247704028447
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.19905971567056127
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+229 SMAP_G-7
+(2872, 24)
+Sample Mean: 0.03270916703455603
+Sample Median: 0.0
+Sample Variance: 0.024813218705502203
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.15752212132110907
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+230 SMAP_P-1
+(2821, 24)
+Sample Mean: 0.037082899449147
+Sample Median: 0.0
+Sample Variance: 0.027485034174750532
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1657861097159546
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+231 SMAP_P-2
+(2855, 24)
+Sample Mean: 0.04008481789649616
+Sample Median: 0.0
+Sample Variance: 0.029171787161616527
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.17079750338226998
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+232 SMAP_P-3
+(2609, 24)
+Sample Mean: 0.023779864571355565
+Sample Median: 0.0
+Sample Variance: 0.023214382612323555
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1523626680401848
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+233 SMAP_P-4
+(2818, 24)
+Sample Mean: 0.031019785688026345
+Sample Median: 0.0
+Sample Variance: 0.027627922468495048
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1662164927692046
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+234 SMAP_S-1
+(2875, 24)
+Sample Mean: 0.03287675272878167
+Sample Median: 0.0
+Sample Variance: 0.028687343994627267
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.16937338632331606
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+235 SMAP_T-1
+(2855, 24)
+Sample Mean: 0.03734353749546012
+Sample Median: 0.0
+Sample Variance: 0.03288558228608985
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.18134382340209398
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+236 SMAP_T-2
+(2876, 24)
+Sample Mean: 0.02468578555765577
+Sample Median: 0.0
+Sample Variance: 0.017740233487407768
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1331924678328612
+++++++++++++++++++++++++++++++++++++++
+n_features
+24
+237 SMAP_T-3
+(23694, 37)
+Sample Mean: 0.07194496544231523
+Sample Median: 0.0036644365310600337
+Sample Variance: 0.022581956550931776
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.15027294018196283
+++++++++++++++++++++++++++++++++++++++
+n_features
+37
+238 SMD_machine-1-2
+(23702, 37)
+Sample Mean: 0.17341359533739759
+Sample Median: 0.029255696108241316
+Sample Variance: 0.07149708601820556
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.2673893902498855
+++++++++++++++++++++++++++++++++++++++
+n_features
+37
+239 SMD_machine-1-3
+(23706, 37)
+Sample Mean: 0.16804614400978057
+Sample Median: 0.039712388047107604
+Sample Variance: 0.0656325527114753
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.25618851010823124
+++++++++++++++++++++++++++++++++++++++
+n_features
+37
+240 SMD_machine-1-4
+(23688, 37)
+Sample Mean: 0.23293368173775875
+Sample Median: 0.1266519999362316
+Sample Variance: 0.0650820691155471
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.2551118756850553
+++++++++++++++++++++++++++++++++++++++
+n_features
+37
+241 SMD_machine-1-6
+(23697, 37)
+Sample Mean: 0.22907247676232734
+Sample Median: 0.04405268557503078
+Sample Variance: 0.09362640610138472
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.3059843232935059
+++++++++++++++++++++++++++++++++++++++
+n_features
+37
+242 SMD_machine-1-7
+(23698, 37)
+Sample Mean: 0.175229228872757
+Sample Median: 0.08295656268766882
+Sample Variance: 0.04363525822395443
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.20889054125056603
+++++++++++++++++++++++++++++++++++++++
+n_features
+37
+243 SMD_machine-1-8
+(23693, 37)
+Sample Mean: 0.13354686680720038
+Sample Median: 0.052632
+Sample Variance: 0.03372387220108689
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.18364060607906654
+++++++++++++++++++++++++++++++++++++++
+n_features
+37
+244 SMD_machine-2-1
+(23699, 37)
+Sample Mean: 0.1262655207676938
+Sample Median: 0.04282706318996489
+Sample Variance: 0.031058091505651742
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.17623306019487872
+++++++++++++++++++++++++++++++++++++++
+n_features
+37
+245 SMD_machine-2-2
+(23688, 37)
+Sample Mean: 0.09025310817711171
+Sample Median: 0.01811578980254263
+Sample Variance: 0.04144453573167236
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.2035793106670527
+++++++++++++++++++++++++++++++++++++++
+n_features
+37
+246 SMD_machine-2-3
+(23689, 37)
+Sample Mean: 0.1906252736595726
+Sample Median: 0.0800003392000814
+Sample Variance: 0.04583224640005651
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.21408467110014326
+++++++++++++++++++++++++++++++++++++++
+n_features
+37
+247 SMD_machine-2-4
+(23688, 37)
+Sample Mean: 0.1264701938002061
+Sample Median: 0.0338347246169744
+Sample Variance: 0.034860548134260934
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.18670979656745634
+++++++++++++++++++++++++++++++++++++++
+n_features
+37
+248 SMD_machine-2-5
+(23696, 37)
+Sample Mean: 0.12953135764439294
+Sample Median: 0.036437
+Sample Variance: 0.03695890220769944
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1922469823110351
+++++++++++++++++++++++++++++++++++++++
+n_features
+37
+249 SMD_machine-2-7
+(28722, 37)
+Sample Mean: 0.13688080497988428
+Sample Median: 0.0221183956459536
+Sample Variance: 0.0645555845414802
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.2540779103768767
+++++++++++++++++++++++++++++++++++++++
+n_features
+37
+250 SMD_machine-2-9
+(23692, 37)
+Sample Mean: 0.14747465433428372
+Sample Median: 0.055294
+Sample Variance: 0.059680657473754756
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.24429624940582848
+++++++++++++++++++++++++++++++++++++++
+n_features
+37
+251 SMD_machine-3-10
+(23702, 37)
+Sample Mean: 0.17790351299895277
+Sample Median: 0.045455
+Sample Variance: 0.06627256431982277
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.25743458260269303
+++++++++++++++++++++++++++++++++++++++
+n_features
+37
+252 SMD_machine-3-2
+(23703, 37)
+Sample Mean: 0.20641074626212888
+Sample Median: 0.062818
+Sample Variance: 0.07124103089322541
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.2669101550957277
+++++++++++++++++++++++++++++++++++++++
+n_features
+37
+253 SMD_machine-3-3
+(23690, 37)
+Sample Mean: 0.15212957299544919
+Sample Median: 0.03266227772617553
+Sample Variance: 0.05318488561362455
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.23061848497816595
+++++++++++++++++++++++++++++++++++++++
+n_features
+37
+254 SMD_machine-3-5
+(28726, 37)
+Sample Mean: 0.26340422907616257
+Sample Median: 0.195815
+Sample Variance: 0.07134733451497881
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.26710921832647183
+++++++++++++++++++++++++++++++++++++++
+n_features
+37
+255 SMD_machine-3-6
+(45213, 2)
+Sample Mean: 0.30464969653129187
+Sample Median: 0.28078817733990147
+Sample Variance: 0.01236075434947667
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.11117892943124012
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+256 SVDB_800
+(21971, 2)
+Sample Mean: 0.44961459826337846
+Sample Median: 0.4397590361445783
+Sample Variance: 0.018052306632284878
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1343588725476843
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+257 SVDB_801
+(44573, 2)
+Sample Mean: 0.5299946275634841
+Sample Median: 0.5346534653465347
+Sample Variance: 0.006778516124431524
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.08233174433006703
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+258 SVDB_802
+(41984, 2)
+Sample Mean: 0.47698098218159896
+Sample Median: 0.4920634920634921
+Sample Variance: 0.040739025365690525
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.20183910762211205
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+259 SVDB_803
+(44582, 2)
+Sample Mean: 0.5213105889065576
+Sample Median: 0.47709923664122134
+Sample Variance: 0.026778134293019246
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.16364025877827024
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+260 SVDB_804
+(42263, 2)
+Sample Mean: 0.5249135808559469
+Sample Median: 0.5495283018867924
+Sample Variance: 0.05745231448596335
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.23969212437200216
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+261 SVDB_805
+(45249, 2)
+Sample Mean: 0.48342168855329387
+Sample Median: 0.5396825396825398
+Sample Variance: 0.08619913770673862
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.29359689662313976
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+262 SVDB_806
+(45037, 2)
+Sample Mean: 0.44321090361940163
+Sample Median: 0.4304347826086956
+Sample Variance: 0.04652057486584009
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.2156862880802581
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+263 SVDB_807
+(46080, 2)
+Sample Mean: 0.4668151314962872
+Sample Median: 0.5057971014492754
+Sample Variance: 0.05448653195851146
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.23342350344065926
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+264 SVDB_808
+(46080, 2)
+Sample Mean: 0.37443576642331877
+Sample Median: 0.3673202614379086
+Sample Variance: 0.01049468561365242
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.10244357282744691
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+265 SVDB_809
+(43550, 2)
+Sample Mean: 0.5823432973165434
+Sample Median: 0.5690262079586392
+Sample Variance: 0.022236093002636684
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.14911771525421347
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+266 SVDB_810
+(45487, 2)
+Sample Mean: 0.41225160289906676
+Sample Median: 0.4233128834355828
+Sample Variance: 0.06782381492163767
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.26043005763858684
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+267 SVDB_811
+(41261, 2)
+Sample Mean: 0.4666614429287388
+Sample Median: 0.5225225225225225
+Sample Variance: 0.07794936624883414
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.279194137203549
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+268 SVDB_812
+(41549, 2)
+Sample Mean: 0.48348757658892133
+Sample Median: 0.5294117647058822
+Sample Variance: 0.06959949865037116
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.2638171689833153
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+269 SVDB_820
+(36160, 2)
+Sample Mean: 0.46695584859967343
+Sample Median: 0.5153846153846154
+Sample Variance: 0.03954079299154187
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.19884866856869288
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+270 SVDB_821
+(21182, 2)
+Sample Mean: 0.4870916986750022
+Sample Median: 0.43689320388349523
+Sample Variance: 0.12933567149378428
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.35963268969016743
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+271 SVDB_822
+(41006, 2)
+Sample Mean: 0.3983736319531678
+Sample Median: 0.38757763975155274
+Sample Variance: 0.006874266707531433
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.08291119772100408
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+272 SVDB_823
+(40842, 2)
+Sample Mean: 0.4272309167393399
+Sample Median: 0.42019543973941365
+Sample Variance: 0.008012966588990028
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.08951517518828876
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+273 SVDB_824
+(40353, 2)
+Sample Mean: 0.5869902141054437
+Sample Median: 0.5580524344569289
+Sample Variance: 0.04224559737994689
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.20553733816498376
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+274 SVDB_825
+(43618, 2)
+Sample Mean: 0.5057269721272852
+Sample Median: 0.49380165289256195
+Sample Variance: 0.009681668282912129
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.0983954688129089
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+275 SVDB_826
+(45819, 2)
+Sample Mean: 0.4609111992872052
+Sample Median: 0.4460431654676259
+Sample Variance: 0.04780201641740898
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.2186367224814006
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+276 SVDB_827
+(34393, 2)
+Sample Mean: 0.4545273382267692
+Sample Median: 0.4661654135338345
+Sample Variance: 0.041150438405315126
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.2028557083380084
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+277 SVDB_828
+(44333, 2)
+Sample Mean: 0.46810137300556737
+Sample Median: 0.4481792717086835
+Sample Variance: 0.032669226421128475
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.18074630403172418
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+278 SVDB_829
+(46080, 2)
+Sample Mean: 0.49754259112861
+Sample Median: 0.5092592592592592
+Sample Variance: 0.01165478567917486
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.10795733267904899
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+279 SVDB_840
+(45573, 2)
+Sample Mean: 0.755066720141985
+Sample Median: 0.7826725403817915
+Sample Variance: 0.025708917280411615
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.16034000524015088
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+280 SVDB_841
+(43298, 2)
+Sample Mean: 0.630010568702316
+Sample Median: 0.6158038147138964
+Sample Variance: 0.00812570753993987
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.0901427065265952
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+281 SVDB_842
+(45683, 2)
+Sample Mean: 0.5549754396831967
+Sample Median: 0.5664335664335663
+Sample Variance: 0.01275879110602918
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.11295481887033054
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+282 SVDB_843
+(44828, 2)
+Sample Mean: 0.31229733679393745
+Sample Median: 0.27615062761506276
+Sample Variance: 0.014186934627943508
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1191089191788067
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+283 SVDB_844
+(44257, 2)
+Sample Mean: 0.46608684488440083
+Sample Median: 0.39966273187183815
+Sample Variance: 0.028883458430716637
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.16995134136192228
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+284 SVDB_845
+(45856, 2)
+Sample Mean: 0.3820628017795621
+Sample Median: 0.3846153846153846
+Sample Variance: 0.0035277594579148953
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.05939494471682666
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+285 SVDB_846
+(37593, 2)
+Sample Mean: 0.4929307410417997
+Sample Median: 0.5452292441140024
+Sample Variance: 0.04408023973986509
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.2099529464900769
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+286 SVDB_847
+(45909, 2)
+Sample Mean: 0.42125402590646166
+Sample Median: 0.42380261248185774
+Sample Variance: 0.010048202003092732
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.10024072028418757
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+287 SVDB_848
+(45538, 2)
+Sample Mean: 0.4594374290550056
+Sample Median: 0.4613003095975232
+Sample Variance: 0.01155754433837218
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1075060200099147
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+288 SVDB_849
+(46080, 2)
+Sample Mean: 0.4087280115853983
+Sample Median: 0.3978201634877384
+Sample Variance: 0.012013773682456076
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.10960736144281585
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+289 SVDB_850
+(35022, 2)
+Sample Mean: 0.43225193890924496
+Sample Median: 0.42885375494071143
+Sample Variance: 0.01548108424574642
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.12442300529141072
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+290 SVDB_851
+(44356, 2)
+Sample Mean: 0.7154225135259564
+Sample Median: 0.7
+Sample Variance: 0.019097772735275364
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.13819469141495763
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+291 SVDB_852
+(43519, 2)
+Sample Mean: 0.49406478158371975
+Sample Median: 0.5053598774885146
+Sample Variance: 0.016535067079965472
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.12858875176299625
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+292 SVDB_853
+(27580, 2)
+Sample Mean: 0.5579310267861669
+Sample Median: 0.5466500749582222
+Sample Variance: 0.06868346687386111
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.2620753076385891
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+293 SVDB_854
+(33120, 2)
+Sample Mean: 0.5114954357745097
+Sample Median: 0.5059101654846335
+Sample Variance: 0.008548710129793437
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.09245923496218988
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+294 SVDB_855
+(44587, 2)
+Sample Mean: 0.4089832102107758
+Sample Median: 0.4922839506172839
+Sample Variance: 0.032208607198099926
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1794675658666488
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+295 SVDB_856
+(40755, 2)
+Sample Mean: 0.6472495107043496
+Sample Median: 0.6705069124423964
+Sample Variance: 0.018219484035433626
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.13497956895557797
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+296 SVDB_857
+(46080, 2)
+Sample Mean: 0.27478101324672505
+Sample Median: 0.25641025641025644
+Sample Variance: 0.017458637407012888
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.13213113715931188
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+297 SVDB_858
+(40888, 2)
+Sample Mean: 0.6065609615493549
+Sample Median: 0.6262376237623762
+Sample Variance: 0.016439136970766183
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.12821519789309763
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+298 SVDB_859
+(26382, 2)
+Sample Mean: 0.5227730734897355
+Sample Median: 0.4837209302325581
+Sample Variance: 0.03217786093525645
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.17938188575008474
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+299 SVDB_860
+(31317, 2)
+Sample Mean: 0.4866878844045963
+Sample Median: 0.4917355371900826
+Sample Variance: 0.011097987424839903
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1053469858365198
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+300 SVDB_861
+(26519, 2)
+Sample Mean: 0.6881391304843184
+Sample Median: 0.6845753899480069
+Sample Variance: 0.019044748732521124
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.13800271277232606
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+301 SVDB_862
+(36149, 2)
+Sample Mean: 0.4287250615286274
+Sample Median: 0.45197740112994345
+Sample Variance: 0.06032479496069858
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.24561106441017386
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+302 SVDB_863
+(42184, 2)
+Sample Mean: 0.5846126915903871
+Sample Median: 0.5217391304347827
+Sample Variance: 0.024927922253442605
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.15788578863673133
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+303 SVDB_864
+(36228, 2)
+Sample Mean: 0.5164006000095517
+Sample Median: 0.5480225988700564
+Sample Variance: 0.023759759694222886
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1541420114512033
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+304 SVDB_865
+(41977, 2)
+Sample Mean: 0.5414264006367058
+Sample Median: 0.5481611208406304
+Sample Variance: 0.010981882242708742
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.10479447620322715
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+305 SVDB_866
+(42997, 2)
+Sample Mean: 0.4874932001729974
+Sample Median: 0.48138297872340424
+Sample Variance: 0.0358168158192927
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.18925331125053715
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+306 SVDB_867
+(31194, 2)
+Sample Mean: 0.41931205070395017
+Sample Median: 0.4803692734539288
+Sample Variance: 0.0324719457904174
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.180199738596973
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+307 SVDB_868
+(31525, 2)
+Sample Mean: 0.34030924559826076
+Sample Median: 0.3260869565217392
+Sample Variance: 0.01906963504333605
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.1380928493562793
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+308 SVDB_869
+(32572, 2)
+Sample Mean: 0.42277428310068216
+Sample Median: 0.5574229691876751
+Sample Variance: 0.07577338892859345
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.27526966583442036
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+309 SVDB_870
+(45632, 2)
+Sample Mean: 0.6507752224064597
+Sample Median: 0.6974522292993631
+Sample Variance: 0.02083564612011893
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1443455788035052
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+310 SVDB_871
+(43744, 2)
+Sample Mean: 0.4525496507393936
+Sample Median: 0.47619047619047616
+Sample Variance: 0.043528428734188565
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.20863467768851027
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+311 SVDB_872
+(46080, 2)
+Sample Mean: 0.4852489017739116
+Sample Median: 0.4279661016949152
+Sample Variance: 0.1110657949809097
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.33326535220588066
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+312 SVDB_873
+(43518, 2)
+Sample Mean: 0.5163428920566169
+Sample Median: 0.4622991347342398
+Sample Variance: 0.07083929065830262
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.2661565153406969
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+313 SVDB_874
+(39609, 2)
+Sample Mean: 0.5174204190976098
+Sample Median: 0.47576099210822986
+Sample Variance: 0.06879587305507012
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.2622896739390823
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+314 SVDB_875
+(42336, 2)
+Sample Mean: 0.3550229235782983
+Sample Median: 0.3546798029556649
+Sample Variance: 0.01788173707064724
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.13372261241333583
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+315 SVDB_876
+(40746, 2)
+Sample Mean: 0.4711419651655893
+Sample Median: 0.4770863137815927
+Sample Variance: 0.03095522412389193
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.17594096772466591
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+316 SVDB_877
+(31423, 2)
+Sample Mean: 0.5784106563340692
+Sample Median: 0.5832106038291605
+Sample Variance: 0.013251490052184274
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.11511511652334924
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+317 SVDB_878
+(21697, 2)
+Sample Mean: 0.5816105900670437
+Sample Median: 0.562137049941928
+Sample Variance: 0.024352323232176752
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.15605230928178138
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+318 SVDB_879
+(37516, 2)
+Sample Mean: 0.4389071359708613
+Sample Median: 0.4879467996674979
+Sample Variance: 0.04605390260815043
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.21460173020772788
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+319 SVDB_880
+(24857, 2)
+Sample Mean: 0.507486105742237
+Sample Median: 0.516
+Sample Variance: 0.011008603648279708
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.10492189308375878
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+320 SVDB_881
+(44525, 2)
+Sample Mean: 0.5482658979484658
+Sample Median: 0.5286069651741293
+Sample Variance: 0.08212116997745372
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.2865679151221464
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+321 SVDB_882
+(44469, 2)
+Sample Mean: 0.5579102643726934
+Sample Median: 0.5530327654412989
+Sample Variance: 0.08319529258430945
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.28843594190792077
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+322 SVDB_883
+(41365, 2)
+Sample Mean: 0.5289473190639964
+Sample Median: 0.5260461144321094
+Sample Variance: 0.010324554579015233
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.10160981536748914
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+323 SVDB_884
+(32746, 2)
+Sample Mean: 0.4679195659285825
+Sample Median: 0.4706994328922496
+Sample Variance: 0.024941637303659697
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.15792921611804353
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+324 SVDB_885
+(45799, 2)
+Sample Mean: 0.6654203122666243
+Sample Median: 0.7006802721088435
+Sample Variance: 0.020824588424755968
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.14430727086587136
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+325 SVDB_886
+(39251, 2)
+Sample Mean: 0.5042018535499317
+Sample Median: 0.443298969072165
+Sample Variance: 0.07119986730553196
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.26683303263563896
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+326 SVDB_887
+(43125, 2)
+Sample Mean: 0.40817809294884994
+Sample Median: 0.40408163265306113
+Sample Variance: 0.0068204647348612
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.0825861049745125
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+327 SVDB_888
+(42411, 2)
+Sample Mean: 0.49110349015300575
+Sample Median: 0.392
+Sample Variance: 0.05122978833360732
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.22633998394805838
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+328 SVDB_889
+(41729, 2)
+Sample Mean: 0.6045218713206664
+Sample Median: 0.6041923551171394
+Sample Variance: 0.010791202401425866
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.10388071236483636
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+329 SVDB_890
+(34841, 2)
+Sample Mean: 0.515807313133189
+Sample Median: 0.5360501567398119
+Sample Variance: 0.030577173904340227
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.17486330062177205
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+330 SVDB_891
+(24686, 2)
+Sample Mean: 0.41291171829119533
+Sample Median: 0.40997268496055495
+Sample Variance: 0.0143793162395937
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.1199137866952491
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+331 SVDB_892
+(39063, 2)
+Sample Mean: 0.41628884470742555
+Sample Median: 0.4083044982698961
+Sample Variance: 0.027613645695019364
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.16617354089932418
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+332 SVDB_893
+(42798, 2)
+Sample Mean: 0.40536721787846164
+Sample Median: 0.4604651162790697
+Sample Variance: 0.049367970909926354
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.22218904318153573
+++++++++++++++++++++++++++++++++++++++
+n_features
+2
+333 SVDB_894
+(33466, 72)
+Sample Mean: 0.04170300630375396
+Sample Median: 1.99999998e-08
+Sample Variance: 0.02025542220635899
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.14232154512356515
+++++++++++++++++++++++++++++++++++++++
+n_features
+72
+334 cicids_2
+(57679, 72)
+Sample Mean: 0.03983779933404331
+Sample Median: 1.6666666666666667e-08
+Sample Variance: 0.019893046847172885
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.14104271284675748
+++++++++++++++++++++++++++++++++++++++
+n_features
+72
+335 cicids_3
+(38180, 72)
+Sample Mean: 0.043239972869294534
+Sample Median: 1.6666666666666667e-08
+Sample Variance: 0.021849421649376553
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.14781549867783336
+++++++++++++++++++++++++++++++++++++++
+n_features
+72
+336 cicids_5
+(56847, 72)
+Sample Mean: 0.042797106086209596
+Sample Median: 2.5e-08
+Sample Variance: 0.021810823201000508
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.14768487803766678
+++++++++++++++++++++++++++++++++++++++
+n_features
+72
+337 cicids_6
+(25784, 72)
+Sample Mean: 0.043351429044855345
+Sample Median: 3.120124756316306e-08
+Sample Variance: 0.023477331718874395
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.1532231435484679
+++++++++++++++++++++++++++++++++++++++
+n_features
+72
+338 cicids_7
+(56804, 29)
+Sample Mean: 0.5119739231014914
+Sample Median: 0.5196775947322414
+Sample Variance: 0.04425657939656574
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.21037247775449558
+++++++++++++++++++++++++++++++++++++++
+n_features
+29
+339 creditcard
+(24072, 5)
+Sample Mean: 0.3759573465281111
+Sample Median: 0.11998897919823667
+Sample Variance: 0.1629696402940072
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.40369498423191635
+++++++++++++++++++++++++++++++++++++++
+n_features
+5
+340 metro_traffic-volume
+(1492, 5)
+Sample Mean: 0.25592334539619316
+Sample Median: 0.14068441064638737
+Sample Variance: 0.07233246373124573
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.26894695337788405
+++++++++++++++++++++++++++++++++++++++
+n_features
+5
+341 room-occupancy_1
+(1073, 5)
+Sample Mean: 0.32557890543901796
+Sample Median: 0.21739130434782616
+Sample Variance: 0.09788398550363599
+Sample Min: 0.0
+Sample Max: 1.0
+Sample Standard Deviation: 0.3128641646204243
+++++++++++++++++++++++++++++++++++++++
+n_features
+5
+342 room-occupancy
+(19672, 38)
+Sample Mean: 0.3584297016118251
+Sample Median: 0.2893850253905603
+Sample Variance: 0.1177229322069641
+Sample Min: 0.0
+Sample Max: 1.0000000000000002
+Sample Standard Deviation: 0.3431077559702842
+++++++++++++++++++++++++++++++++++++++
+n_features
+38
+343 swan_sf
+(344, 200)
+[[3.36401864e-003 0.00000000e+000 6.42612572e-002 0.00000000e+000
+  3.82561355e-002 0.00000000e+000 0.00000000e+000 1.22914659e-001
+  0.00000000e+000 0.00000000e+000 0.00000000e+000 0.00000000e+000
+  0.00000000e+000 6.42612572e-002 0.00000000e+000 0.00000000e+000
+  7.54429738e-001 0.00000000e+000 1.52665350e-001 0.00000000e+000
+  1.84558841e-001 2.24238862e-002 2.24238862e-002 2.24238862e-002
+  1.93000235e-002 0.00000000e+000 0.00000000e+000 0.00000000e+000
+  1.00000000e+000 2.15637513e-152 1.25387596e-118 5.57760385e-118
+  1.99498998e-118 5.18033809e-001 3.71333894e-001 1.00000000e+000
+  0.00000000e+000 1.00000000e+000 0.00000000e+000 3.79037355e-001
+  1.81990841e-001 1.00000000e+000 0.00000000e+000 1.00000000e+000
+  0.00000000e+000 3.80298606e-001 1.77533218e-001 1.00000000e+000
+  4.66555799e-002 6.48441069e-001 7.23595348e-003 4.95952518e-001
+  2.77555756e-017 3.84636895e-001 1.98673721e-002 3.28995413e-002
+  6.22786819e-003 1.30755286e-001 1.38777878e-017 1.00000000e+000
+  2.80152780e-002 6.53819887e-001 2.36409862e-003 4.91672681e-001
+  1.38777878e-017 7.06739683e-001 1.80310956e-002 3.09510927e-002
+  1.23493580e-003 1.21587275e-001 0.00000000e+000 1.00000000e+000
+  2.14733343e-002 6.61416999e-001 3.02394839e-004 4.95789416e-001
+  0.00000000e+000 1.00000000e+000 1.89005800e-002 3.14023262e-002
+  1.90363028e-003 1.07685499e-001 1.38777878e-017 9.35738760e-001
+  8.69094695e-002 3.94428230e-001 7.01959740e-003 4.25227643e-001
+  0.00000000e+000 8.98674993e-002 6.24319268e-004 4.63662798e-003
+  6.51834489e-004 1.27531326e-001 0.00000000e+000 8.75317027e-001
+  8.39003511e-001 8.65033165e-001 0.00000000e+000 5.81230287e-001
+  4.94985025e-002 8.75804982e-001 1.05781400e-001 4.31065692e-001
+  0.00000000e+000 5.97556281e-001 7.87644069e-002 1.22064444e-001
+  3.03233486e-002 3.14376284e-002 1.10376333e-003 4.16693732e-001
+  1.38777878e-017 1.00000000e+000 2.81893830e-006 8.88366425e-006
+  0.00000000e+000 2.42140505e-001 1.07752410e-001 1.87247588e-002
+  4.99998516e-001 0.00000000e+000 5.03682458e-001 1.66265038e-001
+  2.15347526e-001 1.35785129e-002 4.16781732e-001 6.93889390e-018
+  6.87500000e-001 7.81250000e-002 7.77156117e-016 1.11022302e-016
+  5.00000000e-001 5.00000000e-001 7.40772567e-001 7.20259192e-001
+  6.89782747e-001 9.69839380e-002 8.68426253e-001 6.93889390e-018
+  0.00000000e+000 1.06382979e-002 1.35003780e-002 1.34009111e-002
+  8.54409804e-002 6.93889390e-018 2.69841270e-001 4.89795918e-001
+  4.62466762e-001 5.24512454e-001 6.74435168e-001 4.42198872e-002
+  1.00000000e+000 1.00000000e+000 1.00000000e+000 0.00000000e+000
+  7.80161424e-001 1.06139397e-001 1.00000000e+000 1.00000000e+000
+  1.00000000e+000 2.37751947e-015 0.00000000e+000 0.00000000e+000
+  5.12368491e-001 7.65131245e-001 5.69943554e-001 2.57325061e-001
+  7.16510575e-001 1.34632007e-002 8.41301526e-001 2.99708537e-001
+  8.00238354e-002 0.00000000e+000 7.68780445e-006 7.43902512e-004
+  1.00000000e+000 1.37987917e-001 1.00000000e+000 1.00000000e+000
+  3.19785141e-001 4.10325056e-001 2.17020841e-001 1.97086698e-001
+  1.00000000e+000 8.86302888e-001 6.43505712e-001 2.91888664e-001
+  1.38777878e-017 2.87218050e-016 2.83921714e-017 1.37502475e-017
+  9.01452347e-001 8.44301048e-001 7.82578090e-001 3.41977249e-002
+  5.70100583e-001 1.68759378e-002 6.52671653e-001 1.06553248e-001]
+ [1.00769027e-001 1.00000000e-001 5.25702356e-001 4.72454329e-001
+  6.03221634e-002 0.00000000e+000 0.00000000e+000 1.72327263e-001
+  0.00000000e+000 3.33217985e-001 2.89786455e-001 2.68192155e-001
+  5.07505800e-002 5.25702356e-001 4.72454329e-001 0.00000000e+000
+  9.99501781e-002 1.72692414e-001 2.03884109e-001 2.86624343e-002
+  2.65629614e-002 2.29676790e-001 2.27996932e-001 2.33527983e-001
+  7.62037490e-003 0.00000000e+000 0.00000000e+000 0.00000000e+000
+  1.00000000e+000 0.00000000e+000 3.58050403e-041 3.53936003e-041
+  3.58065757e-041 3.50751437e-001 1.72924901e-001 1.00000000e+000
+  0.00000000e+000 1.00000000e+000 0.00000000e+000 3.79037355e-001
+  1.81990841e-001 1.00000000e+000 0.00000000e+000 1.00000000e+000
+  0.00000000e+000 3.80298606e-001 1.77533218e-001 9.83396740e-001
+  2.54221294e-002 6.24525361e-001 1.59916117e-003 4.81065526e-001
+  4.31170976e-002 3.88122260e-003 7.25118989e-004 4.65251353e-004
+  7.10173055e-004 2.42184315e-001 5.33068198e-002 9.83555646e-001
+  9.75574976e-003 6.33692170e-001 4.03894625e-004 4.98563578e-001
+  4.70502895e-002 1.66093233e-003 2.39087598e-004 8.96632278e-005
+  2.18435290e-004 2.53356010e-001 3.97743234e-002 9.82560239e-001
+  3.75863386e-003 6.41459810e-001 1.37435726e-004 5.97459876e-001
+  8.45245813e-002 5.03551805e-004 1.80409214e-004 5.71496708e-005
+  1.29746978e-004 4.03800182e-001 1.32508398e-001 8.44566977e-001
+  7.69734674e-002 3.36814736e-001 3.30502820e-002 3.81343945e-001
+  6.75150751e-002 9.74491410e-003 1.48511927e-003 3.43281822e-003
+  2.00025714e-003 3.65191412e-001 1.02495425e-001 1.27039133e-001
+  7.32122724e-001 4.60898949e-001 4.93807080e-001 5.54736546e-001
+  1.17610971e-003 7.44008496e-001 9.83796980e-002 3.16913877e-001
+  5.56808214e-002 5.48026673e-001 2.84986527e-003 4.12424709e-002
+  4.12294524e-002 2.19143239e-002 2.14610041e-002 4.72376462e-001
+  2.51907234e-002 0.00000000e+000 2.85078728e-008 3.14140532e-009
+  1.22849123e-008 2.43880851e-001 7.12558637e-002 3.08486854e-002
+  2.96798592e-001 1.00000000e+000 7.29900227e-002 2.57540303e-002
+  3.26284558e-002 3.40535989e-003 4.38498603e-001 2.43400626e-002
+  4.37500000e-001 1.40625000e-001 6.66133815e-016 3.84592537e-016
+  5.00000000e-001 5.00000000e-001 3.09535536e-001 9.10971354e-001
+  4.06344690e-001 5.29473189e-001 9.14044863e-001 1.39306253e-002
+  0.00000000e+000 4.34908669e-003 5.11031995e-003 2.82616390e-003
+  1.33300144e-001 4.51976021e-002 2.38095238e-001 5.78231293e-001
+  4.12967887e-001 5.90021249e-001 7.95835589e-001 7.01216938e-002
+  1.00000000e+000 1.00000000e+000 1.00000000e+000 0.00000000e+000
+  7.80161424e-001 1.06139397e-001 2.22222222e-001 2.00000000e-001
+  2.00000000e-001 7.12180445e-016 0.00000000e+000 0.00000000e+000
+  1.74452898e-001 3.89036269e-001 1.48418055e-001 2.03362783e-001
+  8.23289763e-001 1.06523059e-001 3.14290670e-001 3.31544164e-001
+  2.23141573e-004 1.48418297e-001 1.94007557e-001 1.91504872e-001
+  5.12467382e-003 3.35727079e-001 2.70023845e-001 7.71966765e-001
+  5.71223741e-001 1.74429994e-001 6.17633186e-003 9.07304450e-001
+  5.28939551e-001 9.20941190e-001 6.34159098e-001 1.72028209e-001
+  1.38777878e-017 1.00000000e+000 0.00000000e+000 2.85798434e-017
+  4.14885997e-001 4.78878727e-001 2.44167859e-001 9.20245696e-001
+  8.14138283e-001 5.58780882e-001 7.64408125e-001 5.91997069e-002]
+ [3.50342842e-002 1.00000000e-001 5.35015567e-001 4.67254855e-001
+  7.99434611e-002 0.00000000e+000 0.00000000e+000 2.10406711e-001
+  0.00000000e+000 2.03427340e-001 2.79667722e-001 2.95842217e-001
+  3.53903724e-001 5.35015567e-001 4.67254855e-001 0.00000000e+000
+  1.22559927e-001 1.94846305e-001 2.42394313e-001 2.52089956e-001
+  3.49863256e-002 2.32018797e-001 2.28366617e-001 2.33912137e-001
+  2.19870260e-002 0.00000000e+000 0.00000000e+000 0.00000000e+000
+  1.00000000e+000 0.00000000e+000 5.96198954e-043 5.89347961e-043
+  5.96224520e-043 3.50751437e-001 1.72924901e-001 1.00000000e+000
+  0.00000000e+000 1.00000000e+000 0.00000000e+000 3.79037355e-001
+  1.81990841e-001 1.00000000e+000 0.00000000e+000 1.00000000e+000
+  0.00000000e+000 3.80298606e-001 1.77533218e-001 9.80907076e-001
+  2.99985408e-002 6.26953039e-001 6.02526606e-003 4.65145712e-001
+  2.73759063e-002 1.07983742e-002 4.68089009e-003 4.12977983e-003
+  3.65710320e-003 1.48748731e-001 2.76527146e-002 9.82688284e-001
+  1.13794251e-002 6.34455587e-001 1.90426344e-003 4.73799531e-001
+  2.18115637e-002 3.67520688e-003 1.42705630e-003 1.13218135e-003
+  1.17200281e-003 1.49340340e-001 1.73168703e-002 9.82255650e-001
+  4.59066943e-003 6.41729019e-001 7.14563810e-004 5.25390049e-001
+  3.49267624e-002 1.24814150e-003 7.69834155e-004 4.10948976e-004
+  5.45721715e-004 2.78999857e-001 7.06682190e-002 8.75890435e-001
+  7.64828750e-002 3.51153208e-001 1.96677048e-002 3.35369075e-001
+  6.67442757e-002 2.34871832e-002 2.59054846e-004 1.87241452e-003
+  3.43681586e-004 4.41186462e-002 4.72683187e-002 3.41000746e-001
+  8.32788118e-001 5.01539059e-001 3.60102401e-001 5.70097144e-001
+  2.09654626e-003 7.93088413e-001 1.16015747e-001 3.30098113e-001
+  5.66084220e-002 5.81888391e-001 2.67518888e-003 1.04037591e-001
+  9.91190997e-002 5.79263894e-002 5.35629192e-002 4.56711844e-001
+  1.78346558e-002 0.00000000e+000 8.20712702e-002 7.18447801e-003
+  3.44787888e-002 2.68565305e-001 8.15560193e-002 1.01229842e-002
+  8.76285383e-001 1.00000000e+000 1.87182653e-001 7.51679506e-002
+  8.86469542e-002 1.18998391e-002 4.43178926e-001 3.78504580e-002
+  5.00000000e-001 1.09375000e-001 8.88178420e-016 3.31004554e-016
+  5.00000000e-001 5.00000000e-001 4.12602715e-001 6.25536829e-001
+  4.41545217e-001 2.40622639e-001 8.72121671e-001 3.35838436e-002
+  4.18367347e-002 2.73437500e-002 2.91922236e-002 2.02809793e-002
+  1.99222721e-001 3.01668255e-002 2.38095238e-001 5.37414966e-001
+  4.74330129e-001 5.92198709e-001 7.62946490e-001 3.63493541e-002
+  1.00000000e+000 1.00000000e+000 1.00000000e+000 0.00000000e+000
+  7.80161424e-001 1.06139397e-001 2.22222222e-001 2.00000000e-001
+  2.00000000e-001 1.00730565e-015 0.00000000e+000 0.00000000e+000
+  1.68564721e-001 4.29211809e-001 1.30404896e-001 1.86560766e-001
+  8.67071046e-001 1.80684706e-001 1.92505952e-001 4.34860839e-001
+  2.87035406e-004 6.80822950e-002 1.35357240e-001 1.32317018e-001
+  4.40429687e-002 2.41228505e-001 2.70023845e-001 7.64878563e-001
+  4.20186934e-001 2.19282033e-002 5.18848775e-002 7.36150938e-001
+  5.07981829e-001 9.30491371e-001 5.32631097e-001 3.04060894e-002
+  5.55111512e-017 1.00000000e+000 4.16333634e-017 1.00556646e-017
+  4.14885997e-001 4.78878727e-001 3.17973276e-001 7.72986963e-001
+  8.33611709e-001 5.37798826e-001 6.01592176e-001 7.71819431e-002]
+ [8.85403644e-002 1.00000000e-001 5.29130687e-001 4.89911043e-001
+  1.13444266e-001 0.00000000e+000 0.00000000e+000 2.67208790e-001
+  0.00000000e+000 1.88352821e-001 2.60150075e-001 2.72646237e-001
+  3.31470053e-001 5.29130687e-001 4.89911043e-001 0.00000000e+000
+  1.57269992e-001 2.64226785e-001 3.00009002e-001 2.54265208e-001
+  5.10561854e-002 2.30046776e-001 2.23769869e-001 2.33988595e-001
+  3.16942575e-003 0.00000000e+000 0.00000000e+000 0.00000000e+000
+  1.00000000e+000 0.00000000e+000 2.34285852e-210 2.31593645e-210
+  0.00000000e+000 5.18033809e-001 3.71333894e-001 1.00000000e+000
+  0.00000000e+000 1.00000000e+000 0.00000000e+000 3.79037355e-001
+  1.81990841e-001 1.00000000e+000 0.00000000e+000 1.00000000e+000
+  0.00000000e+000 3.80298606e-001 1.77533218e-001 9.81592418e-001
+  3.46040661e-002 6.26397466e-001 6.49929444e-003 6.30545576e-001
+  1.23273214e-001 4.74494120e-003 7.13931760e-003 2.91905772e-003
+  5.22392035e-003 4.40004510e-001 1.47782678e-001 9.82758181e-001
+  1.46418404e-002 6.34459906e-001 2.95162173e-003 6.62519567e-001
+  1.43280976e-001 1.72306140e-003 3.91054669e-003 1.16456502e-003
+  2.75781283e-003 4.65250732e-001 1.63917251e-001 9.82226877e-001
+  6.48155314e-003 6.41849037e-001 1.56744029e-003 6.86805509e-001
+  1.59437056e-001 6.27502357e-004 2.21516518e-003 5.93875952e-004
+  1.58070581e-003 4.70297478e-001 1.71251013e-001 8.66391664e-001
+  7.80733627e-002 3.45796001e-001 2.41174366e-002 3.94043593e-001
+  6.17509664e-002 3.13867143e-002 8.06627709e-004 2.54520886e-003
+  8.94629292e-004 4.58191560e-001 1.77209599e-001 3.65931208e-001
+  8.56515142e-001 4.92253881e-001 3.47140601e-001 5.76803940e-001
+  3.24953684e-003 7.96692550e-001 1.04353408e-001 3.25928873e-001
+  4.15842852e-002 5.81462864e-001 2.34936725e-003 5.24375592e-002
+  5.16099570e-002 2.85068693e-002 2.74680388e-002 4.69412140e-001
+  2.27221744e-002 0.00000000e+000 1.00976781e-028 8.83945699e-030
+  4.24211432e-029 2.68565305e-001 8.15560193e-002 3.68902816e-003
+  9.50927873e-001 1.00000000e+000 8.22774032e-002 3.39718896e-002
+  4.00363573e-002 6.77363900e-003 4.34671501e-001 3.03014978e-002
+  5.00000000e-001 7.81250000e-002 6.66133815e-016 2.28129145e-016
+  5.00000000e-001 5.00000000e-001 3.67887444e-001 6.30584865e-001
+  3.33868622e-001 2.87738475e-001 9.66998622e-001 3.06180535e-002
+  1.75836547e-002 1.47758989e-002 1.41212294e-002 1.10203399e-002
+  1.97749971e-001 3.40271163e-002 3.17460317e-001 5.64625850e-001
+  4.68602986e-001 6.28279787e-001 7.40883568e-001 1.78101998e-002
+  1.00000000e+000 1.00000000e+000 1.00000000e+000 0.00000000e+000
+  7.80161424e-001 1.06139397e-001 2.22222222e-001 2.00000000e-001
+  2.00000000e-001 7.12180445e-016 0.00000000e+000 0.00000000e+000
+  1.65785908e-001 4.20143770e-001 1.33156131e-001 1.94586659e-001
+  8.46519129e-001 1.56357885e-001 2.11807286e-001 3.39422524e-001
+  3.11572503e-004 1.16584715e-001 1.84459483e-001 2.12643371e-001
+  3.62009522e-002 1.92498535e-001 2.70023845e-001 7.57527153e-001
+  2.74495174e-001 2.51011154e-002 4.47656801e-002 7.82888817e-001
+  5.39301890e-001 9.25549508e-001 4.77997670e-001 9.37527256e-002
+  1.38777878e-017 1.00000000e+000 0.00000000e+000 2.89093800e-017
+  4.14885997e-001 4.78878727e-001 3.46948453e-001 8.13199757e-001
+  8.35423168e-001 5.38537308e-001 7.22791989e-001 8.11558327e-002]
+ [6.65605940e-002 1.00000000e-001 6.00834825e-001 5.34858521e-001
+  1.62407252e-002 0.00000000e+000 0.00000000e+000 6.17099204e-002
+  0.00000000e+000 8.91871857e-001 9.76907941e-001 9.43374974e-001
+  7.68391667e-001 6.00834825e-001 5.34858521e-001 0.00000000e+000
+  3.21453914e-002 1.03813393e-001 1.30310534e-001 1.43043837e-001
+  4.11813126e-003 1.86131137e-001 9.56829640e-002 2.33980715e-001
+  3.03737865e-002 0.00000000e+000 0.00000000e+000 0.00000000e+000
+  1.00000000e+000 0.00000000e+000 0.00000000e+000 0.00000000e+000
+  0.00000000e+000 5.18033809e-001 3.71333894e-001 1.00000000e+000
+  0.00000000e+000 1.00000000e+000 0.00000000e+000 3.79037355e-001
+  1.81990841e-001 1.00000000e+000 0.00000000e+000 1.00000000e+000
+  0.00000000e+000 3.80298606e-001 1.77533218e-001 9.84178139e-001
+  2.53647573e-002 6.24566287e-001 1.02134301e-003 5.36897414e-001
+  6.54195605e-002 2.87717911e-003 1.01562863e-003 3.15812313e-004
+  9.42000810e-004 3.93655535e-001 1.17171555e-001 9.83644164e-001
+  9.65989088e-003 6.33652221e-001 2.91633226e-004 5.22346413e-001
+  7.08384117e-002 1.58354390e-003 3.32857355e-004 7.24981175e-005
+  2.61787604e-004 3.81710404e-001 1.09393805e-001 9.82539420e-001
+  3.62139472e-003 6.41424075e-001 7.88689056e-005 4.97576434e-001
+  7.06837329e-002 5.92331128e-004 1.06282012e-004 4.02341580e-005
+  7.99126597e-005 3.43670481e-001 8.62659632e-002 8.28811996e-001
+  8.34895159e-002 3.36963581e-001 4.40535782e-002 4.00088678e-001
+  7.31520353e-002 1.32106309e-001 1.82587506e-003 9.59779180e-003
+  2.06047723e-003 2.14325178e-001 2.32210103e-002 1.92671580e-001
+  7.43317590e-001 4.62492732e-001 4.12851540e-001 5.52535667e-001
+  1.60339320e-003 8.07828258e-001 8.37452486e-002 3.19440958e-001
+  1.17138260e-002 5.60226472e-001 1.19590393e-003 4.89693841e-002
+  4.22543409e-002 2.73596092e-002 2.23040039e-002 4.37288007e-001
+  1.38418179e-002 0.00000000e+000 1.57018738e-002 1.38125064e-003
+  6.59563893e-003 2.68554107e-001 8.15519523e-002 6.18168062e-003
+  7.82854911e-001 1.00000000e+000 8.37642936e-002 3.40831333e-002
+  3.90796374e-002 7.26166503e-003 4.69026643e-001 2.73924689e-002
+  4.37500000e-001 1.40625000e-001 6.66133815e-016 4.81096644e-016
+  5.00000000e-001 5.00000000e-001 6.49980869e-001 8.77702890e-001
+  7.56704354e-001 1.82917442e-001 7.22280597e-001 6.00335105e-002
+  0.00000000e+000 1.18521711e-002 8.20408706e-003 9.31599142e-003
+  2.54387801e-001 4.87572569e-002 1.74603175e-001 3.80952381e-001
+  3.33299243e-001 4.13971833e-001 7.59651940e-001 4.20255410e-002
+  1.00000000e+000 1.00000000e+000 1.00000000e+000 0.00000000e+000
+  7.80161424e-001 1.06139397e-001 2.22222222e-001 2.00000000e-001
+  2.00000000e-001 7.32635696e-016 0.00000000e+000 0.00000000e+000
+  1.47507721e-001 3.03576679e-001 1.47657590e-001 1.72015462e-001
+  7.30640395e-001 5.00979391e-002 2.50015950e-001 3.86932960e-001
+  2.50126604e-004 1.07683566e-001 1.71904249e-001 1.66299261e-001
+  5.78601444e-003 4.97710226e-001 2.70023845e-001 7.88866753e-001
+  6.73200325e-001 2.78710473e-001 3.67239195e-003 9.23589252e-001
+  4.67542115e-001 9.92740229e-001 7.12410898e-001 1.95846390e-002
+  1.38777878e-017 1.00000000e+000 0.00000000e+000 2.54450904e-017
+  4.14885997e-001 4.78878727e-001 4.36542317e-001 9.34256973e-001
+  9.29894370e-001 5.39885334e-001 3.08819024e-001 2.80376826e-001]]
+config_headers  Index(['ALLM4TS', 'AnomalyTransformer', 'AutoEncoder', 'CBLOF', 'CNN', 'COPOD',
+       'Donut', 'EIF', 'FITS', 'HBOS', 'IForest', 'KMeansAD', 'KNN', 'LOF',
+       'LSTMAD', 'MCD', 'OCSVM', 'OFA', 'OmniAnomaly', 'PCA', 'RobustPCA',
+       'TimesNet', 'TranAD', 'USAD'],
+      dtype='object')
+len(config_headers)  24
+csv_file_list  ['CalIt2_traffic' 'Daphnet_S01R01E1' 'Daphnet_S02R01E0' 'Daphnet_S02R02E0'
+ 'Daphnet_S03R01E0' 'Daphnet_S03R01E1' 'Daphnet_S03R02E0'
+ 'Daphnet_S05R01E0' 'Daphnet_S05R01E1' 'Daphnet_S05R01E2'
+ 'Daphnet_S05R01E3' 'Daphnet_S05R02E0' 'Daphnet_S05R02E1'
+ 'Daphnet_S06R01E0' 'Daphnet_S06R01E1' 'Daphnet_S06R01E2'
+ 'Daphnet_S07R01E0' 'Daphnet_S07R02E0' 'Daphnet_S08R01E0'
+ 'Daphnet_S08R01E1' 'Daphnet_S08R01E2' 'Daphnet_S08R01E3'
+ 'Daphnet_S09R01E0' 'Daphnet_S09R01E1' 'Daphnet_S09R01E2'
+ 'Daphnet_S09R01E3' 'Daphnet_S09R01E4' 'Exathlon_10_2_1000000_67'
+ 'Exathlon_10_3_1000000_75' 'Exathlon_10_4_1000000_79'
+ 'Exathlon_1_2_100000_68' 'Exathlon_1_4_1000000_80'
+ 'Exathlon_1_5_1000000_86' 'Exathlon_2_1_100000_60'
+ 'Exathlon_2_2_200000_69' 'Exathlon_2_5_1000000_87'
+ 'Exathlon_2_5_1000000_88' 'Exathlon_3_2_500000_70'
+ 'Exathlon_3_4_1000000_81' 'Exathlon_3_5_1000000_89'
+ 'Exathlon_4_1_100000_61' 'Exathlon_4_5_1000000_90'
+ 'Exathlon_5_1_100000_63' 'Exathlon_5_1_100000_64'
+ 'Exathlon_5_1_500000_62' 'Exathlon_5_2_1000000_72'
+ 'Exathlon_5_4_1000000_82' 'Exathlon_5_5_1000000_91'
+ 'Exathlon_6_1_500000_65' 'Exathlon_6_3_200000_76'
+ 'Exathlon_8_3_200000_73' 'Exathlon_8_4_1000000_77'
+ 'Exathlon_8_5_1000000_83' 'Exathlon_9_2_1000000_66'
+ 'Exathlon_9_3_500000_74' 'Exathlon_9_4_1000000_78'
+ 'Exathlon_9_5_1000000_84' 'GECCO_water_quality'
+ 'GHL_17_Lev_fault_Temp_corr_seed_57_vars_23'
+ 'GHL_18_Lev_fault_Temp_corr_seed_59_vars_23'
+ 'GHL_19_Lev_fault_Temp_corr_seed_62_vars_23'
+ 'GHL_20_Lev_fault_Temp_corr_seed_67_vars_23'
+ 'GHL_21_Lev_fault_Temp_corr_seed_73_vars_23'
+ 'GHL_22_Lev_fault_Temp_corr_seed_777_vars_23'
+ 'GHL_24_Lev_fault_Temp_corr_seed_83_vars_23'
+ 'GHL_41_Lev_corr_Temp_fault_seed_181_vars_23'
+ 'GHL_43_Lev_corr_Temp_fault_seed_189_vars_23'
+ 'GHL_44_Lev_corr_Temp_fault_seed_190_vars_23'
+ 'GHL_45_Lev_corr_Temp_fault_seed_193_vars_23'
+ 'GHL_46_Lev_corr_Temp_fault_seed_194_vars_23'
+ 'GHL_47_Lev_corr_Temp_fault_seed_197_vars_23'
+ 'GHL_48_Lev_corr_Temp_fault_seed_199_vars_23' 'Genesis' 'GutenTAG_0'
+ 'GutenTAG_10' 'GutenTAG_11' 'GutenTAG_12' 'GutenTAG_13' 'GutenTAG_14'
+ 'GutenTAG_15' 'GutenTAG_16' 'GutenTAG_17' 'GutenTAG_18' 'GutenTAG_19'
+ 'GutenTAG_1' 'GutenTAG_20' 'GutenTAG_21' 'GutenTAG_22' 'GutenTAG_23'
+ 'GutenTAG_24' 'GutenTAG_25' 'GutenTAG_26' 'GutenTAG_27' 'GutenTAG_28'
+ 'GutenTAG_29' 'GutenTAG_2' 'GutenTAG_3' 'GutenTAG_4' 'GutenTAG_5'
+ 'GutenTAG_6' 'GutenTAG_7' 'GutenTAG_8' 'GutenTAG_9' 'MITDB_100'
+ 'MITDB_101' 'MITDB_102' 'MITDB_103' 'MITDB_104' 'MITDB_105' 'MITDB_106'
+ 'MITDB_107' 'MITDB_108' 'MITDB_109' 'MITDB_111' 'MITDB_112' 'MITDB_113'
+ 'MITDB_114' 'MITDB_115' 'MITDB_116' 'MITDB_117' 'MITDB_118' 'MITDB_119'
+ 'MITDB_121' 'MITDB_122' 'MITDB_123' 'MITDB_124' 'MITDB_200' 'MITDB_201'
+ 'MITDB_202' 'MITDB_203' 'MITDB_205' 'MITDB_207' 'MITDB_208' 'MITDB_209'
+ 'MITDB_210' 'MITDB_212' 'MITDB_213' 'MITDB_214' 'MITDB_215' 'MITDB_217'
+ 'MITDB_219' 'MITDB_220' 'MITDB_221' 'MITDB_222' 'MITDB_223' 'MITDB_228'
+ 'MITDB_230' 'MITDB_232' 'MITDB_233' 'MITDB_234' 'MSL_C-1' 'MSL_C-2'
+ 'MSL_D-14' 'MSL_D-15' 'MSL_D-16' 'MSL_F-4' 'MSL_F-5' 'MSL_F-7' 'MSL_F-8'
+ 'MSL_M-1' 'MSL_M-2' 'MSL_M-3' 'MSL_M-4' 'MSL_M-5' 'MSL_M-6' 'MSL_M-7'
+ 'MSL_P-10' 'MSL_P-11' 'MSL_P-14' 'MSL_P-15' 'MSL_S-2' 'MSL_T-12'
+ 'MSL_T-13' 'MSL_T-4' 'MSL_T-5' 'MSL_T-8' 'OPPORTUNITY_S1-ADL2'
+ 'OPPORTUNITY_S1-ADL3' 'OPPORTUNITY_S1-ADL4' 'OPPORTUNITY_S1-ADL5'
+ 'OPPORTUNITY_S2-ADL1' 'OPPORTUNITY_S2-ADL2' 'OPPORTUNITY_S3-ADL3'
+ 'OPPORTUNITY_S3-ADL4' 'OPPORTUNITY_S3-ADL5' 'OPPORTUNITY_S4-ADL2'
+ 'OPPORTUNITY_S4-ADL3' 'OPPORTUNITY_S4-ADL4' 'OPPORTUNITY_S4-ADL5' 'PSM'
+ 'SMAP_A-1' 'SMAP_A-2' 'SMAP_A-3' 'SMAP_A-4' 'SMAP_A-5' 'SMAP_A-6'
+ 'SMAP_A-8' 'SMAP_A-9' 'SMAP_B-1' 'SMAP_D-11' 'SMAP_D-1' 'SMAP_D-2'
+ 'SMAP_D-3' 'SMAP_D-4' 'SMAP_D-5' 'SMAP_D-6' 'SMAP_D-7' 'SMAP_D-8'
+ 'SMAP_D-9' 'SMAP_E-10' 'SMAP_E-11' 'SMAP_E-12' 'SMAP_E-13' 'SMAP_E-1'
+ 'SMAP_E-2' 'SMAP_E-3' 'SMAP_E-4' 'SMAP_E-5' 'SMAP_E-6' 'SMAP_E-7'
+ 'SMAP_E-8' 'SMAP_E-9' 'SMAP_F-1' 'SMAP_F-2' 'SMAP_F-3' 'SMAP_G-1'
+ 'SMAP_G-2' 'SMAP_G-3' 'SMAP_G-6' 'SMAP_G-7' 'SMAP_P-1' 'SMAP_P-2'
+ 'SMAP_P-3' 'SMAP_P-4' 'SMAP_S-1' 'SMAP_T-1' 'SMAP_T-2' 'SMAP_T-3'
+ 'SMD_machine-1-2' 'SMD_machine-1-3' 'SMD_machine-1-4' 'SMD_machine-1-6'
+ 'SMD_machine-1-7' 'SMD_machine-1-8' 'SMD_machine-2-1' 'SMD_machine-2-2'
+ 'SMD_machine-2-3' 'SMD_machine-2-4' 'SMD_machine-2-5' 'SMD_machine-2-7'
+ 'SMD_machine-2-9' 'SMD_machine-3-10' 'SMD_machine-3-2' 'SMD_machine-3-3'
+ 'SMD_machine-3-5' 'SMD_machine-3-6' 'SVDB_800' 'SVDB_801' 'SVDB_802'
+ 'SVDB_803' 'SVDB_804' 'SVDB_805' 'SVDB_806' 'SVDB_807' 'SVDB_808'
+ 'SVDB_809' 'SVDB_810' 'SVDB_811' 'SVDB_812' 'SVDB_820' 'SVDB_821'
+ 'SVDB_822' 'SVDB_823' 'SVDB_824' 'SVDB_825' 'SVDB_826' 'SVDB_827'
+ 'SVDB_828' 'SVDB_829' 'SVDB_840' 'SVDB_841' 'SVDB_842' 'SVDB_843'
+ 'SVDB_844' 'SVDB_845' 'SVDB_846' 'SVDB_847' 'SVDB_848' 'SVDB_849'
+ 'SVDB_850' 'SVDB_851' 'SVDB_852' 'SVDB_853' 'SVDB_854' 'SVDB_855'
+ 'SVDB_856' 'SVDB_857' 'SVDB_858' 'SVDB_859' 'SVDB_860' 'SVDB_861'
+ 'SVDB_862' 'SVDB_863' 'SVDB_864' 'SVDB_865' 'SVDB_866' 'SVDB_867'
+ 'SVDB_868' 'SVDB_869' 'SVDB_870' 'SVDB_871' 'SVDB_872' 'SVDB_873'
+ 'SVDB_874' 'SVDB_875' 'SVDB_876' 'SVDB_877' 'SVDB_878' 'SVDB_879'
+ 'SVDB_880' 'SVDB_881' 'SVDB_882' 'SVDB_883' 'SVDB_884' 'SVDB_885'
+ 'SVDB_886' 'SVDB_887' 'SVDB_888' 'SVDB_889' 'SVDB_890' 'SVDB_891'
+ 'SVDB_892' 'SVDB_893' 'SVDB_894' 'cicids_2' 'cicids_3' 'cicids_5'
+ 'cicids_6' 'cicids_7' 'creditcard' 'metro_traffic-volume'
+ 'room-occupancy_1' 'room-occupancy' 'swan_sf']
+len(csv_file_list)  344
+Meta-features saved to ../FMMS/meta_features_FMMS.csv
