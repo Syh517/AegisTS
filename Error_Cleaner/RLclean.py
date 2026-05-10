@@ -52,10 +52,10 @@ from Error_Cleaner.strategy import (
 # ==============================
 # 常量
 # ==============================
-LAMBDA_1, LAMBDA_2, LAMBDA_3 = 0.6, 0.2, 0.2  # LAMBDA_1 * low_reward_N - LAMBDA_2 * R_Cost_N + LAMBDA_3 * R_Issue_N
+LAMBDA_1, LAMBDA_2, LAMBDA_3 = 0.4, 0.5, 0.1  # LAMBDA_1 * low_reward_N + LAMBDA_2 * R_Issue_N - LAMBDA_1 * R_Cost_N
 LAMBDA_GRAD = 10.0  # 深度学习模型梯度权重
 ALPHA = 0.1 # k
-MU_1, MU_2, MU_3, MU_4 = 0.25, 0.05, 0.15, 0.55  
+MU_1, MU_2, MU_3, MU_4 = 0.2, 0.2, 0.2, 0.4  
 # 将MAX_COST_NORM从100.0调整为300.0，以适应更广泛的时间成本范围
 # 这个值应该根据实际运行时间和任务复杂度进行调整
 MAX_COST_NORM = 300.0
@@ -1362,8 +1362,8 @@ class RLCleanEnvironment:
                 
         reward_components = {
             'perf_component': LAMBDA_1 * low_reward_N,
-            'cost_component': -LAMBDA_2 * R_Cost_N,
-            'issue_component': LAMBDA_3 * R_Issue_N,
+            'cost_component': -LAMBDA_3 * R_Cost_N,
+            'issue_component': LAMBDA_2 * R_Issue_N,
             'extra_penalty_component': extra_penalty,
         }
         reward_components = {
@@ -1845,15 +1845,15 @@ if __name__ == '__main__':
 
 
 
-    type = 'classification'
-    dataset_name = 'Libras'
-    data, label_2_train =load_single_dataset(type, dataset_name, rate=1)
-    data, label_2_train = sample_data_by_rate(data, label_2_train, rate=0.5)
-
     # type = 'classification'
-    # dataset_name = 'Handwriting'
+    # dataset_name = 'Libras'
     # data, label_2_train =load_single_dataset(type, dataset_name, rate=1)
-    # data, label_2_train = sample_data_by_rate(data, label_2_train, rate=0.2)
+    # data, label_2_train = sample_data_by_rate(data, label_2_train, rate=0.5)
+
+    type = 'classification'
+    dataset_name = 'Handwriting'
+    data, label_2_train =load_single_dataset(type, dataset_name, rate=1)
+    data, label_2_train = sample_data_by_rate(data, label_2_train, rate=0.2)
 
 
     if type == 'forecast':
@@ -1871,7 +1871,7 @@ if __name__ == '__main__':
 
     # 注入错误
     dm.inject_errors(
-        0.3,
+        0.5,
         ["missing", "duplicate", "single", "drift", "gaussian", "volatility", "gradual", "sudden"],
         covered_attrs=range(data.shape[-1]),
     )
@@ -1895,21 +1895,21 @@ if __name__ == '__main__':
 
     # 训练清洗模型
     repaired_data, time_cost, trained_agents = main(data_2_repair, label_2_train, task_type, detector, constraints, 
-                                                    concentrated=miner_type, max_steps=20, n_episodes=5)
+                                                    concentrated=miner_type, max_steps=20, n_episodes=10)
     save_trained_agents(trained_agents, model_save_path)
 
 
-    # 调用模型清洗
-    repaired_data, time_cost = apply_cleaning_from_saved_model(
-    model_path=model_save_path,
-    dirty_data=data_2_repair,
-    label=label_2_train,
-    task_type=task_type,
-    detector=detector,
-    constraints=constraints,
-    concentrated=miner_type,
-    max_steps=20
-    )
+    # # 调用模型清洗
+    # repaired_data, time_cost = apply_cleaning_from_saved_model(
+    # model_path=model_save_path,
+    # dirty_data=data_2_repair,
+    # label=label_2_train,
+    # task_type=task_type,
+    # detector=detector,
+    # constraints=constraints,
+    # concentrated=miner_type,
+    # max_steps=20
+    # )
 
 
 

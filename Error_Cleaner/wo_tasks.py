@@ -52,10 +52,10 @@ from Error_Cleaner.strategy import (
 # ==============================
 # 常量
 # ==============================
-LAMBDA_1, LAMBDA_2, LAMBDA_3, LAMBDA_4 = 0, 0.05, 0.7, 0.25  # -LAMBDA_2 * R_Cost_N + LAMBDA_3 * R_Issue_N + LAMBDA_4 * low_reward_N
+LAMBDA_1, LAMBDA_2, LAMBDA_3 = 0.4, 0.5, 0.1  # LAMBDA_1 * low_reward_N + LAMBDA_2 * R_Issue_N - LAMBDA_1 * R_Cost_N
 LAMBDA_GRAD = 10.0  # 深度学习模型梯度权重
 ALPHA = 0.1 # k
-MU_1, MU_2, MU_3 = 0.2, 0.2, 0.6 
+MU_1, MU_2, MU_3, MU_4 = 0.2, 0.2, 0.2, 0.4
 # 将MAX_COST_NORM从100.0调整为300.0，以适应更广泛的时间成本范围
 # 这个值应该根据实际运行时间和任务复杂度进行调整
 MAX_COST_NORM = 300.0
@@ -1238,11 +1238,16 @@ class RLCleanEnvironment:
         R_Conservative = np.sqrt(np.sum(diff ** 2)) / np.sqrt(num_cells)
 
         R_Local_Signal = np.clip(initial_rate - final_rate, -1.0, 1.0)
+        perf_change, proxy_train_time = train_and_evaluate(self.task_type, 'proxy', self.proxy_model, self)
+        self.latest_proxy_perf_change = perf_change
+        self.latest_proxy_train_time = proxy_train_time
+        R_Perf_N = np.clip(perf_change, -1.0, 1.0)
 
         low_reward_components = {
             'structure_component': MU_1 * R_Structure,
             'conservative_component': -MU_2 * R_Conservative,
             'local_signal_component': MU_3 * R_Local_Signal,
+            'perf_component': MU_4 * R_Perf_N,
         }
         low_reward_components = {
             key: (0.0 if np.isnan(value) else value)
@@ -1359,10 +1364,9 @@ class RLCleanEnvironment:
                 extra_penalty = -5.0  # 对执行连续重复无效操作施加惩罚
                 
         reward_components = {
-            'cost_component': -LAMBDA_2 * R_Cost_N,
-            'issue_component': LAMBDA_3 * R_Issue_N,
-            'low_reward_component': LAMBDA_4 * low_reward_N,
-            'k_stability_component': ALPHA * k_stability,
+            'perf_component': LAMBDA_1 * low_reward_N,
+            'issue_component': LAMBDA_2 * R_Issue_N,
+            'cost_component': -LAMBDA_3 * R_Cost_N,
             'extra_penalty_component': extra_penalty,
         }
         reward_components = {
@@ -1376,7 +1380,7 @@ class RLCleanEnvironment:
         info = {
             'issue_reward': reward_components['issue_component'],
             'cost_reward': reward_components['cost_component'],      # 时间成本奖励
-            'low_rl_reward': reward_components['low_reward_component'],  # 来自低层的奖励
+            'low_rl_reward': reward_components['perf_component'],  # 来自低层的奖励
             'extra_penalty': reward_components['extra_penalty_component'],  # 额外惩罚
             'best_k': self.best_k,
             'issue_improvement': issue_improvement,
@@ -1384,7 +1388,7 @@ class RLCleanEnvironment:
             'missing_improvement': missing_improvement,
             'outlier_improvement': outlier_improvement,
             'violation_improvement': violation_improvement,
-            'k_stability_reward': reward_components['k_stability_component']  # k稳定性奖励
+            'k_stability_reward': 0.0  # k稳定性奖励
         }
         return self._state_high(rates=current_rates), R_H, False, info
 

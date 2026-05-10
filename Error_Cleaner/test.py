@@ -52,7 +52,7 @@ from Error_Cleaner.strategy import (
 # ==============================
 # 常量
 # ==============================
-LAMBDA_1, LAMBDA_2, LAMBDA_3 = 0.4, 0.1, 0.5  # LAMBDA_1 * low_reward_N - LAMBDA_2 * R_Cost_N + LAMBDA_3 * R_Issue_N
+LAMBDA_1, LAMBDA_2, LAMBDA_3 = 0.4, 0.5, 0.1  # LAMBDA_1 * low_reward_N + LAMBDA_2 * R_Issue_N - LAMBDA_1 * R_Cost_N
 LAMBDA_GRAD = 10.0  # 深度学习模型梯度权重
 ALPHA = 0.1 # k
 MU_1, MU_2, MU_3, MU_4 = 0.2, 0.2, 0.2, 0.4  
@@ -1362,8 +1362,8 @@ class RLCleanEnvironment:
                 
         reward_components = {
             'perf_component': LAMBDA_1 * low_reward_N,
-            'cost_component': -LAMBDA_2 * R_Cost_N,
-            'issue_component': LAMBDA_3 * R_Issue_N,
+            'cost_component': -LAMBDA_3 * R_Cost_N,
+            'issue_component': LAMBDA_2 * R_Issue_N,
             'extra_penalty_component': extra_penalty,
         }
         reward_components = {
@@ -1895,7 +1895,7 @@ if __name__ == '__main__':
 
     # 训练清洗模型
     repaired_data, time_cost, trained_agents = main(data_2_repair, label_2_train, task_type, detector, constraints, 
-                                                    concentrated=miner_type, max_steps=20, n_episodes=5)
+                                                    concentrated=miner_type, max_steps=20, n_episodes=10)
     save_trained_agents(trained_agents, model_save_path)
 
 
